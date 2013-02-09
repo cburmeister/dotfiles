@@ -1,5 +1,58 @@
 runtime bundle/pathogen/autoload/pathogen.vim
-
-"test
-
 execute pathogen#infect()
+
+set nocompatible
+
+syntax on
+filetype on
+filetype plugin on
+filetype indent on
+
+set expandtab
+set shiftwidth=4
+set tabstop=4
+set smarttab
+
+set ai
+set nosmartindent
+set nowrap
+
+set encoding=utf-8 fileencoding=utf-8
+set nobackup nowritebackup noswapfile autoread
+set number hlsearch incsearch ignorecase smartcase
+
+set ignorecase incsearch smartcase showmatch showcmd hidden
+
+set mouse=a
+
+"au BufNewFile,BufRead *.html setlocal ft=htmljinja
+"au FileType html setlocal foldmethod=manual
+
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,.pyc
+
+let g:ctrlp_custom_ignore='\.pyc'
+let g:ctrlp_working_path_mode=0
+let g:ctrlp_mruf_last_entered=1
+
+set background=dark
+let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
+colorscheme solarized
+
+set clipboard=unnamed
+
+let g:ackhighlight=1
+
+set foldmethod=indent
+set foldlevel=99
+set foldenable
+
+:au FocusLost * :set number
+:au FocusGained * :set relativenumber
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
+
+set statusline=%F%m%r%h%w
+set laststatus=2
