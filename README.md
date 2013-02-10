@@ -23,7 +23,7 @@
 4. Get the dotfiles
 
   ```bash
-    $ git clone git://github.com/cburmeister/dotfiles.git ./dotfiles
+    $ git clone git://github.com/cburmeister/dotfiles.git ~/.dotfiles
   ```
 
 5. Link it up
