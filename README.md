@@ -37,7 +37,6 @@
 5. Link it up
 
   ```bash
-    $ cd ~/.dotfiles
     $ ln -s ~/.dotfiles/vim ~/.vim
     $ ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
   ```
