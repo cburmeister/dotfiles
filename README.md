@@ -1,5 +1,12 @@
 # @bluetickk does dotfiles
 
+1. [Pathogen](https://github.com/tpope/vim-pathogen)
+2. [NERDTree](https://github.com/scrooloose/nerdtree)
+2. [Ack](https://github.com/mileszs/ack.vim)
+3. [Solarized](https://github.com/altercation/vim-colors-solarized)
+4. [CtrlP](https://github.com/kien/ctrlp.vim)
+5. [Fugitive](https://github.com/tpope/vim-fugitive)
+
 ## Install
 
 1. Install [homebrew](http://mxcl.github.com/homebrew/)
