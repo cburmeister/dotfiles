@@ -31,6 +31,10 @@ let g:ctrlp_custom_ignore='\.pyc'
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_mruf_last_entered=1
 
+let mapleader=","
+nnoremap <leader>p :CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
+
 set background=dark
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
