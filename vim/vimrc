@@ -51,10 +51,17 @@ set foldenable
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 
+:set cursorline
+hi CursorLine ctermbg=235
+
 set laststatus=2
 
-hi User1 ctermfg=Black ctermbg=LightGrey
-hi User2 ctermfg=Black ctermbg=DarkGrey
+hi User1 ctermfg=234 ctermbg=33
+hi User2 ctermfg=254 ctermbg=235
+hi User3 ctermfg=125 ctermbg=235
+hi User4 ctermfg=125 ctermbg=234
+hi User5 ctermfg=240 ctermbg=235
+hi User6 ctermfg=234 ctermbg=240
 
 set statusline=
 set statusline+=%1*[%n]
@@ -62,4 +69,5 @@ set statusline+=%2*\ %<%F
 set statusline+=%3*\ %{fugitive#statusline()}
 set statusline+=%4*\ %m
 set statusline+=%=
-set statusline+=%5*\ [%c][%l/%L]
+set statusline+=%5*[%c]
+set statusline+=%6*[%l/%L]
