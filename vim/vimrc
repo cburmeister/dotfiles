@@ -15,7 +15,7 @@ set smarttab
 
 set ai
 set nosmartindent
-set nowrap
+set wrap linebreak
 
 set encoding=utf-8 fileencoding=utf-8
 set nobackup nowritebackup noswapfile autoread
@@ -55,7 +55,7 @@ set foldenable
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 
-:set cursorline
+set cursorline
 hi CursorLine ctermbg=235
 
 set laststatus=2
@@ -63,15 +63,16 @@ set laststatus=2
 hi User1 ctermfg=234 ctermbg=33
 hi User2 ctermfg=254 ctermbg=235
 hi User3 ctermfg=125 ctermbg=235
-hi User4 ctermfg=125 ctermbg=234
-hi User5 ctermfg=240 ctermbg=235
-hi User6 ctermfg=234 ctermbg=240
+hi User4 ctermfg=136 ctermbg=234
 
 set statusline=
 set statusline+=%1*[%n]
 set statusline+=%2*\ %<%F
 set statusline+=%3*\ %{fugitive#statusline()}
-set statusline+=%4*\ %m
+set statusline+=%4*\%m
 set statusline+=%=
-set statusline+=%5*[%c]
-set statusline+=%6*[%l/%L]
+set statusline+=%2*[%c]
+set statusline+=%2*[%l/%L]
+
+" X?HTML & XML
+autocmd FileType html,xhtml,xml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
