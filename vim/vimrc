@@ -25,9 +25,6 @@ set ignorecase incsearch smartcase showmatch showcmd hidden
 
 set mouse=a
 
-"au BufNewFile,BufRead *.html setlocal ft=htmljinja
-"au FileType html setlocal foldmethod=manual
-
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,.pyc
 
 let g:ctrlp_custom_ignore='\.pyc'
@@ -54,5 +51,14 @@ set foldenable
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 
-set statusline=%F%m%r%h%w
+set statusline+=*\[%n]
+set statusline+=%1*\ %<%F
+set statusline+=%{fugitive#statusline()}
+set statusline+=%m
+set statusline+=%=
+set statusline+=%c,
+set statusline+=%l/%L
+set statusline+=\ %P
 set laststatus=2
+
+hi User1 guifg=#ffdad8  guibg=#880c0e
