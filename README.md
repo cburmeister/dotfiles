@@ -6,6 +6,7 @@
 3. [Solarized](https://github.com/altercation/vim-colors-solarized)
 4. [CtrlP](https://github.com/kien/ctrlp.vim)
 5. [Fugitive](https://github.com/tpope/vim-fugitive)
+6. [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
 
 ## Install
 
