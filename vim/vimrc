@@ -25,6 +25,9 @@ set ignorecase incsearch smartcase showmatch showcmd hidden
 
 set mouse=a
 
+au BufNewFile,BufRead *.html setlocal ft=htmljinja
+au FileType html setlocal foldmethod=manual
+
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,.pyc
 
 let g:ctrlp_custom_ignore='\.pyc'

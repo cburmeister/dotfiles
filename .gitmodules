@@ -19,6 +19,3 @@
 [submodule "vim/bundle/nerdcommenter"]
 	path = vim/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
-[submodule "vim/bundle/jinja"]
-	path = vim/bundle/jinja
-	url = git://github.com/Glench/Vim-Jinja2-Syntax.git
