@@ -7,6 +7,7 @@
 4. [CtrlP](https://github.com/kien/ctrlp.vim)
 5. [Fugitive](https://github.com/tpope/vim-fugitive)
 6. [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
+7. [Jinja Syntax](https://github.com/Glench/Vim-Jinja2-Syntax)
 
 ## Install
 
@@ -39,4 +40,5 @@
   ```bash
     $ ln -s ~/.dotfiles/vim ~/.vim
     $ ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
-  ```
+    $ ln -s ~/.dotfiles/vim/bundle/jinja/syntax ~/.vimrc
+```

@@ -73,6 +73,3 @@ set statusline+=%4*\%m
 set statusline+=%=
 set statusline+=%2*[%c]
 set statusline+=%2*[%l/%L]
-
-" X?HTML & XML
-autocmd FileType html,xhtml,xml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
