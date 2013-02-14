@@ -1,7 +1,6 @@
 # @bluetickk does dotfiles
 
-VIM Plugins
-===
+## VIM Plugins
 
 1. [Pathogen](https://github.com/tpope/vim-pathogen)
 2. [NERDTree](https://github.com/scrooloose/nerdtree)
