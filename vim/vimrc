@@ -8,6 +8,9 @@ filetype on
 filetype plugin on
 filetype indent on
 
+set exrc " enable per-directory .vimrc files
+set secure " disable unsafe commands in local .vimrc files
+
 set expandtab
 set shiftwidth=4
 set tabstop=4
