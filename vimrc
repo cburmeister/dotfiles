@@ -9,7 +9,7 @@ filetype plugin on
 filetype indent on
 
 set exrc " enable per-directory .vimrc files
-set secure " disable unsafe commands in local .vimrc files
+set secure " disable unsafe commands in local .vimrc files                  
 
 set expandtab
 set shiftwidth=4
@@ -42,6 +42,7 @@ nnoremap <leader>p :CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
 
 set background=dark
+set term=xterm-256color
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 let g:solarized_contrast="high"
@@ -61,6 +62,7 @@ set foldenable
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 
+set colorcolumn=81
 set cursorline
 hi CursorLine ctermbg=235
 
