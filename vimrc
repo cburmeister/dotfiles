@@ -64,7 +64,6 @@ autocmd InsertLeave * :set relativenumber
 
 set colorcolumn=81
 set cursorline
-hi CursorLine ctermbg=235
 
 set laststatus=2
 
