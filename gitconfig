@@ -1,0 +1,5 @@
+[user]
+	name = Corey Burmeister
+	email = burmeister.corey@gmail.com
+[credential]
+	helper = osxkeychain
