@@ -39,3 +39,5 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
+
+export PYTHONSTARTUP=~/.pythonrc.py
