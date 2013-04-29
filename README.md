@@ -24,4 +24,5 @@
 4. [CtrlP](https://github.com/kien/ctrlp.vim)
 5. [Fugitive](https://github.com/tpope/vim-fugitive)
 6. [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
-7. [Jinja Syntax](https://github.com/Glench/Vim-Jinja2-Syntax)
+7. [Flake8](https://github.com/nvie/vim-flake8)
+8. [Surround](https://github.com/tpope/vim-surround)
