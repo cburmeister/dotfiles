@@ -8,13 +8,6 @@
     $ ./bin/install.sh
     ```
 
-## Dependencies
-
-1. [homebrew](http://mxcl.github.com/homebrew/)
-2. [ack](https://github.com/mileszs/ack.vim)
-3. [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-3. [tmux](https://github.com/ThomasAdam/tmux)
-
 ## VIM Plugins
 
 1. [Pathogen](https://github.com/tpope/vim-pathogen)
