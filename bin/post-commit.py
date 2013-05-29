@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+
+import os
+import datetime
+
+my_dir = os.path.expanduser('~/commit-captures')
+if not os.path.exists(my_dir):
+    os.makedirs(my_dir)
+
+filename = '%s/%s.jpeg' % (my_dir, datetime.datetime.now())
+filename = filename.replace(' ', '_')
+
+commit = os.system('git rev-parse --short HEAD')
+
+#os.system('imagesnap -q %s &' % filename)

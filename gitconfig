@@ -3,3 +3,5 @@
 	email = burmeister.corey@gmail.com
 [credential]
 	helper = osxkeychain
+[color]
+    diff = auto

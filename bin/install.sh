@@ -5,6 +5,7 @@ git submodule init
 git submodule update
 
 echo "[+] Deleting the old files..."
+rm -r ~/bin
 rm ~/.vimrc
 rm ~/.vim
 rm ~/.ackrc
@@ -16,6 +17,7 @@ rm ~/.editrc
 rm ~/.my.cnf
 
 echo "[+] Symlinking files..."
+ln -s ~/.dotfiles/bin ~/bin
 ln -s ~/.dotfiles/vimrc ~/.vimrc
 ln -s ~/.dotfiles/vim ~/.vim
 ln -s ~/.dotfiles/ackrc ~/.ackrc
