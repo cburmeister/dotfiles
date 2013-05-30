@@ -2,4 +2,3 @@
 --type-set=SQL=.sql
 --noSQL
 --type-set=css=.scss
---type-set=html=.mail
