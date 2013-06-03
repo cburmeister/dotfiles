@@ -41,6 +41,7 @@ let g:ctrlp_mruf_last_entered=1
 let mapleader=","
 nnoremap <leader>p :CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
+nmap <space><space> :w<cr>
 
 set background=dark
 set term=xterm-256color
