@@ -5,3 +5,5 @@
 	helper = osxkeychain
 [color]
     diff = auto
+[alias]
+	lg = log --pretty=format:\"%C(yellow)%h%C(reset) %C(cyan)%ad%C(reset) %C(green)%aN%Creset%C(bold red)%d%C(reset) %s\" --date=short --no-merges

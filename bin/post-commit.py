@@ -3,7 +3,7 @@
 import os
 import datetime
 
-my_dir = os.path.expanduser('~/commit-captures')
+my_dir = os.path.expanduser('~/Dropbox/commit-captures')
 if not os.path.exists(my_dir):
     os.makedirs(my_dir)
 
