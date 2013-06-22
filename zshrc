@@ -6,8 +6,6 @@ plugins=(git pip python brew)
 
 setopt hist_ignore_dups  # dont record immediate dupes in history
 
-alias ls='ls -F'
-
 source $ZSH/oh-my-zsh.sh
 
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin
@@ -16,3 +14,5 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin
 PATH=/usr/local/share/npm/bin:$PATH
 
 export PYTHONSTARTUP=~/.pythonrc.py
+
+alias ls='ls -GpF'

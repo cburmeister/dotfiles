@@ -38,6 +38,10 @@ let g:ctrlp_custom_ignore='\.pyc'
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_mruf_last_entered=1
 
+:iabbrev @@ burmeister.corey@gmail.com
+:iabbrev pdb # XXX BREAKPOINT XXX <cr>import pdb; pdb.set_trace()
+:iabbrev ppython #!/usr/bin/env python <cr>#-*- coding: utf-8 -*-
+
 let mapleader=","
 nnoremap <leader>p :CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
