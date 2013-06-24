@@ -15,6 +15,7 @@ rm ~/.gitconfig
 rm ~/.pythonrc.py
 rm ~/.editrc
 rm ~/.my.cnf
+rm ~/.inputrc
 
 echo "[+] Symlinking files..."
 ln -s ~/.dotfiles/bin ~/bin
@@ -27,6 +28,7 @@ ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/pythonrc.py ~/.pythonrc.py
 ln -s ~/.dotfiles/editrc ~/.editrc
 ln -s ~/.dotfiles/my.cnf ~/.my.cnf
+ln -s ~/.dotfiles/inputrc ~/.inputrc
 
 echo "[+] Updating submodules..."
 git submodule foreach git pull origin master --recurse-submodules
