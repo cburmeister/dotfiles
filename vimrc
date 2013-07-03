@@ -63,11 +63,6 @@ set foldmethod=indent
 set foldlevel=99
 set foldenable
 
-:au FocusLost * :set number
-:au FocusGained * :set relativenumber
-autocmd InsertEnter * :set number
-autocmd InsertLeave * :set relativenumber
-
 set colorcolumn=81
 set cursorline
 
