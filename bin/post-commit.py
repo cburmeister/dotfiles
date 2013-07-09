@@ -10,6 +10,4 @@ if not os.path.exists(my_dir):
 filename = '%s/%s.jpeg' % (my_dir, datetime.datetime.now())
 filename = filename.replace(' ', '_')
 
-commit = os.system('git rev-parse --short HEAD')
-
-#os.system('imagesnap -q %s &' % filename)
+os.system('imagesnap -q %s &' % filename)
