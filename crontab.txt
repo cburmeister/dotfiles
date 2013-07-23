@@ -1,0 +1,3 @@
+30 * * * * mv ~/downloads/*.mp3 ~/Music/iTunes/iTunes\ Media/Automatically\ Add\ to\ iTunes.localized/
+30 * * * * mv ~/downloads/*.m4a ~/Music/iTunes/iTunes\ Media/Automatically\ Add\ to\ iTunes.localized/
+30 * * * * mv ~/downloads/*.wav ~/Music/iTunes/iTunes\ Media/Automatically\ Add\ to\ iTunes.localized/
