@@ -31,6 +31,7 @@ set mouse=a
 au BufNewFile,BufRead *.html setlocal ft=htmljinja
 au FileType html setlocal foldmethod=manual
 au BufRead,BufNewFile *.md set filetype=markdown
+au BufRead,BufNewFile TODO,*.TODO,*.todo set filetype=todo
 
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,.pyc
 
