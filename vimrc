@@ -29,13 +29,12 @@ set ignorecase incsearch smartcase showmatch showcmd hidden
 set mouse=a
 
 au BufNewFile,BufRead *.html setlocal ft=htmljinja
-au FileType html setlocal foldmethod=manual
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile TODO,*.TODO,*.todo set filetype=todo
 
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,.pyc
 
-let g:ctrlp_custom_ignore='\.pyc'
+let g:ctrlp_custom_ignore = 'node_modules\|.bower\|static/dst\|static/dev\|.pyc'
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_mruf_last_entered=1
 
@@ -61,8 +60,6 @@ set clipboard=unnamed
 let g:ackhighlight=1
 
 set foldmethod=indent
-set foldlevel=99
-set foldenable
 
 set colorcolumn=81
 set cursorline
