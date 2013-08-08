@@ -59,8 +59,6 @@ set clipboard=unnamed
 
 let g:ackhighlight=1
 
-set foldmethod=indent
-
 set colorcolumn=81
 set cursorline
 
