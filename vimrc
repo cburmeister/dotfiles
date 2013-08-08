@@ -47,6 +47,11 @@ nnoremap <leader>p :CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
 nmap <space><space> :w<cr>
 
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
 set background=dark
 set term=xterm-256color
 let g:solarized_termtrans=1
