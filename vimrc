@@ -34,6 +34,10 @@ au BufRead,BufNewFile TODO,*.TODO,*.todo set filetype=todo
 
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,.pyc
 
+let NERDTreeIgnore=['\.pyc$']
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+
 let g:ctrlp_custom_ignore = 'node_modules\|.bower\|static/dst\|static/dev\|.pyc'
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_mruf_last_entered=1
