@@ -28,7 +28,7 @@ set ignorecase incsearch smartcase showmatch showcmd hidden
 
 set mouse=a
 
-au BufNewFile,BufRead *.html setlocal ft=htmljinja
+au BufNewFile,BufRead *.html,*.mail setlocal ft=htmljinja
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile TODO,*.TODO,*.todo set filetype=todo
 
