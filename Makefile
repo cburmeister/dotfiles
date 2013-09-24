@@ -16,7 +16,7 @@ install:
 	rm -f ~/.my.cnf
 	rm -f ~/.inputrc
 	rm -f ~/.screenrc
-	rm -rf ~/.mongo-hacker/
+	rm -rf ~/.mongorc.js
 	
 	@echo "Linking New Files"
 	ln -s ~/.dotfiles/bin ~/bin
