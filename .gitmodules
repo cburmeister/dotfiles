@@ -40,3 +40,6 @@
 [submodule "vim/bundle/vim-markdown"]
 	path = vim/bundle/vim-markdown
 	url = https://github.com/tpope/vim-markdown
+[submodule "mongo-hacker"]
+	path = mongo-hacker
+	url = git@github.com:TylerBrock/mongo-hacker.git

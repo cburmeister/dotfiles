@@ -4,18 +4,19 @@ install:
 	git submodule update
 
 	@echo "Removing Old Files"
-	rm -r ~/bin
-	rm ~/.vimrc
-	rm ~/.vim
-	rm ~/.ackrc
-	rm ~/.zshrc
-	rm ~/.tmux.conf
-	rm ~/.gitconfig
-	rm ~/.pythonrc.py
-	rm ~/.editrc
-	rm ~/.my.cnf
-	rm ~/.inputrc
-	rm ~/.screenrc
+	rm -rf ~/bin
+	rm -f ~/.vimrc
+	rm -f ~/.vim
+	rm -f ~/.ackrc
+	rm -f ~/.zshrc
+	rm -f ~/.tmux.conf
+	rm -f ~/.gitconfig
+	rm -f ~/.pythonrc.py
+	rm -f ~/.editrc
+	rm -f ~/.my.cnf
+	rm -f ~/.inputrc
+	rm -f ~/.screenrc
+	rm -rf ~/.mongo-hacker/
 	
 	@echo "Linking New Files"
 	ln -s ~/.dotfiles/bin ~/bin
@@ -30,6 +31,7 @@ install:
 	ln -s ~/.dotfiles/my.cnf ~/.my.cnf
 	ln -s ~/.dotfiles/inputrc ~/.inputrc
 	ln -s ~/.dotfiles/screenrc ~/.screenrc
+	ln -s ~/.dotfiles/mongo-hacker/mongo_hacker.js ~/.mongorc.js
 
 	@echo "Updating submodules"
 	git submodule foreach git pull origin master --recurse-submodules
