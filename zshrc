@@ -17,7 +17,8 @@ export PYTHONSTARTUP=~/.pythonrc.py
 
 alias ls='ls -GpF'
 
-### Added by the Heroku Toolbelt
+# heroku
 export PATH="/usr/local/heroku/bin:$PATH"
 
+# https://github.com/kennethreitz/autoenv
 source /usr/local/opt/autoenv/activate.sh

@@ -1,12 +1,28 @@
-runtime bundle/pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-
 set nocompatible
 
 syntax on
 filetype on
 filetype plugin on
 filetype indent on
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'mileszs/ack.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'myusuf3/numbers.vim'
+Bundle 'tpope/vim-pathogen'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'nvie/vim-flake8'
+Bundle 'tpope/vim-fugitive'
+Bundle 'mitsuhiko/vim-jinja'
+Bundle 'tpope/vim-markdown'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-surround'
 
 set exrc " enable per-directory .vimrc files
 set secure " disable unsafe commands in local .vimrc files                  

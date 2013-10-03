@@ -13,10 +13,7 @@ install:
 	rm -f ~/.gitconfig
 	rm -f ~/.pythonrc.py
 	rm -f ~/.editrc
-	rm -f ~/.my.cnf
-	rm -f ~/.inputrc
 	rm -f ~/.screenrc
-	rm -rf ~/.mongorc.js
 	
 	@echo "Linking New Files"
 	ln -s ~/.dotfiles/bin ~/bin
@@ -28,10 +25,7 @@ install:
 	ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 	ln -s ~/.dotfiles/pythonrc.py ~/.pythonrc.py
 	ln -s ~/.dotfiles/editrc ~/.editrc
-	ln -s ~/.dotfiles/my.cnf ~/.my.cnf
-	ln -s ~/.dotfiles/inputrc ~/.inputrc
 	ln -s ~/.dotfiles/screenrc ~/.screenrc
-	ln -s ~/.dotfiles/mongo-hacker/mongo_hacker.js ~/.mongorc.js
 
 	@echo "Updating submodules"
 	git submodule foreach git pull origin master --recurse-submodules
