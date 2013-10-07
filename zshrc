@@ -11,6 +11,8 @@ setopt hist_ignore_dups
 source $ZSH/oh-my-zsh.sh
 eval "$(pyenv init -)"
 
+source /usr/local/opt/autoenv/activate.sh
+
 PATH="/usr/local/share/npm/bin:$PATH"
 PATH="/usr/local/heroku/bin:$PATH"
 PATH="/usr/local/bin:$PATH"
@@ -18,5 +20,3 @@ PATH="/usr/local/bin:$PATH"
 export PATH
 
 alias ls='ls -GpF'
-
-source /usr/local/opt/autoenv/activate.sh
