@@ -18,10 +18,10 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'mileszs/ack.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'myusuf3/numbers.vim'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'nvie/vim-flake8'
 Bundle 'mitsuhiko/vim-jinja'
 Bundle 'terryma/vim-multiple-cursors'
+Bundle 'flazz/vim-colorschemes'
 
 set exrc " enable per-directory .vimrc files
 set secure " disable unsafe commands in local .vimrc files                  
@@ -42,6 +42,7 @@ set number hlsearch incsearch ignorecase smartcase
 set ignorecase incsearch smartcase showmatch showcmd hidden
 
 set mouse=a
+set cursorline
 
 au BufNewFile,BufRead *.html,*.mail setlocal ft=htmljinja
 au BufRead,BufNewFile *.md set filetype=markdown
@@ -82,14 +83,11 @@ let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 let g:solarized_contrast="high"
 let g:solarized_visibility="high"
-colorscheme solarized
+colorscheme smyck
 
 set clipboard=unnamed
 
 let g:ackhighlight=1
-
-set colorcolumn=81
-set cursorline
 
 set laststatus=2
 

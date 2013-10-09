@@ -1,7 +1,6 @@
 ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
-PYTHONSTARTUP=~/.pythonrc.py
 WORKON_HOME=$HOME/.virtualenvs
 
 plugins=(git pip python brew heroku)
@@ -19,4 +18,8 @@ PATH="/usr/local/bin:$PATH"
 
 export PATH
 
+export PYTHONSTARTUP=~/.pythonrc.py
+
 alias ls='ls -GpF'
+
+[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
