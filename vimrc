@@ -2,8 +2,8 @@ set nocompatible
 
 syntax on
 filetype on
-filetype plugin on
 filetype indent on
+filetype plugin on
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -32,7 +32,6 @@ set tabstop=4
 set smarttab
 
 set ai
-set nosmartindent
 set wrap linebreak
 
 set encoding=utf-8 fileencoding=utf-8
@@ -48,7 +47,7 @@ au BufNewFile,BufRead *.html,*.mail setlocal ft=htmljinja
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile TODO,*.TODO,*.todo set filetype=todo
 
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,.pyc
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,.pyc/*
 
 let NERDTreeIgnore=['\.pyc$']
 let NERDTreeMinimalUI = 1
