@@ -15,6 +15,9 @@ PATH="/usr/local/bin:$PATH"
 
 export PATH
 
-export PYTHONSTARTUP=~/.pythonrc.py
+export PYTHONSTARTUP="~/.pythonrc.py"
+
+export PASSWORD_STORE_DIR="~/Dropbox/.password-store"
+export PASSWORD_STORE_KEY="burmeister.corey@gmail.com"
 
 alias ls='ls -GpF'
