@@ -6,4 +6,4 @@
 
 #!/bin/bash
 NUMBER=$1
-curl -H "Content-Type: application/json" -d "{\"action\": \"synchronize\", \"pull_request\": {\"number\": $NUMBER, \"html_url\": \"https://github.com/discogs/discogs/pull/$NUMBER\", \"base\": {\"repo\": {\"full_name\": \"discogs/discogs\"}}, \"head\": {\"repo\": {\"full_name\": \"discogs/discogs\"}}}}" http://cibox:2021/notification/github
+curl -A "DiscogsRunPR/1.0" -H "Content-Type: application/json" -d "{\"action\": \"synchronize\", \"pull_request\": {\"number\": $NUMBER, \"html_url\": \"https://github.com/discogs/discogs/pull/$NUMBER\", \"base\": {\"repo\": {\"full_name\": \"discogs/discogs\"}}, \"head\": {\"repo\": {\"full_name\": \"discogs/discogs\"}}}}" http://www.discogs.com/_github_notify 
