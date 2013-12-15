@@ -16,4 +16,6 @@ export PATH
 
 eval "$(pyenv init -)"
 
+export PYTHONSTARTUP=~/.pythonrc.py
+
 alias ls='ls -GpF'
