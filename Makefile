@@ -1,5 +1,6 @@
 install:
 	@echo "Removing Old Files"
+	rm -rf ~/.zsh
 	rm -rf ~/bin
 	rm -f ~/.vimrc
 	rm -f ~/.ackrc
@@ -11,6 +12,7 @@ install:
 	rm -f ~/.screenrc
 	
 	@echo "Linking New Files"
+	ln -s ~/dotfiles/zsh ~/.zsh
 	ln -s ~/dotfiles/bin ~/bin
 	ln -s ~/dotfiles/vimrc ~/.vimrc
 	ln -s ~/dotfiles/ackrc ~/.ackrc
