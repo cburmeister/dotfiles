@@ -22,6 +22,7 @@ Bundle 'nvie/vim-flake8'
 Bundle 'mitsuhiko/vim-jinja'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'flazz/vim-colorschemes'
+Bundle 'itchyny/lightline.vim'
 
 set exrc " enable per-directory .vimrc files
 set secure " disable unsafe commands in local .vimrc files                  
@@ -90,16 +91,22 @@ let g:ackhighlight=1
 
 set laststatus=2
 
-hi User1 ctermfg=234 ctermbg=33
-hi User2 ctermfg=254 ctermbg=235
-hi User3 ctermfg=125 ctermbg=235
-hi User4 ctermfg=136 ctermbg=234
-
-set statusline=
-set statusline+=%1*[%n]
-set statusline+=%2*\ %<%F
-set statusline+=%3*\ %{fugitive#statusline()}
-set statusline+=%4*\%m
-set statusline+=%=
-set statusline+=%2*[%c]
-set statusline+=%2*[%l/%L]
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component': {
+      \   'readonly': '%{&filetype=="help"?"":&readonly?"⭤":""}',
+      \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
+      \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
+      \ },
+      \ 'component_visible_condition': {
+      \   'readonly': '(&filetype!="help"&& &readonly)',
+      \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
+      \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
+      \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '|', 'right': '|' }
+      \ }
