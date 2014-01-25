@@ -22,6 +22,7 @@ PATH="/usr/local/bin:$PATH"
 export PATH
 
 eval "$(pyenv init -)"
+pyenv virtualenvwrapper
 
 export PYTHONSTARTUP=~/.pythonrc.py
 
