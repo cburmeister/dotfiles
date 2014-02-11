@@ -23,6 +23,7 @@ Bundle 'mitsuhiko/vim-jinja'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'itchyny/lightline.vim'
+Bundle 'wellle/targets.vim'
 
 set exrc " enable per-directory .vimrc files
 set secure " disable unsafe commands in local .vimrc files                  
