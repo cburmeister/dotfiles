@@ -18,6 +18,7 @@ source "$ZSH/oh-my-zsh.sh"
 PATH="/usr/local/share/npm/bin:$PATH"
 PATH="/usr/local/heroku/bin:$PATH"
 PATH="/usr/local/bin:$PATH"
+PATH="~/bin:$PATH"
 
 export PATH
 
