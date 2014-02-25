@@ -59,9 +59,7 @@ let g:ctrlp_custom_ignore = 'node_modules\|.bower\|static/dst\|static/dev\|.pyc'
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_mruf_last_entered=1
 
-:iabbrev @@ burmeister.corey@gmail.com
 :iabbrev pdb # XXX BREAKPOINT XXX <cr>import pdb; pdb.set_trace()
-:iabbrev ppython #!/usr/bin/env python <cr>#-*- coding: utf-8 -*-
 
 let mapleader=","
 nmap <leader>q :nohlsearch<CR>
@@ -78,12 +76,6 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
-set background=dark
-set term=xterm-256color
-let g:solarized_termtrans=1
-let g:solarized_termcolors=256
-let g:solarized_contrast="high"
-let g:solarized_visibility="high"
 colorscheme smyck
 
 set clipboard=unnamed
