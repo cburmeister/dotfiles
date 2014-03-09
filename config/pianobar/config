@@ -1,2 +1,8 @@
 user = burmeister.corey@gmail.com
 password_command = pass show pandora/burmeister.corey@gmail.com
+
+autostart_station = 1674378849114650344
+volume = 5
+audio_format = mp3-hifi
+
+event_command = /Users/cburmeister/.config/pianobar/notify.rb
