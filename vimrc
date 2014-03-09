@@ -45,6 +45,11 @@ set ignorecase incsearch smartcase showmatch showcmd hidden
 set mouse=a
 set cursorline
 
+set clipboard=unnamed
+set laststatus=2
+
+colorscheme smyck
+
 au BufNewFile,BufRead *.html,*.mail setlocal ft=htmljinja
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile TODO,*.TODO,*.todo set filetype=todo
@@ -59,9 +64,12 @@ let g:ctrlp_custom_ignore = 'node_modules\|.bower\|static/dst\|static/dev\|.pyc'
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_mruf_last_entered=1
 
+let g:ackhighlight=1
+
 :iabbrev pdb # XXX BREAKPOINT XXX <cr>import pdb; pdb.set_trace()
 
 let mapleader=","
+
 nmap <leader>q :nohlsearch<CR>
 nmap <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>p :CtrlP<CR>
@@ -76,13 +84,11 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
-colorscheme smyck
-
-set clipboard=unnamed
-
-let g:ackhighlight=1
-
-set laststatus=2
+" https://mug.im/resizing-panes-in-vim-with-your-arrow-keys/
+nnoremap <Up> :resize +5<CR>
+nnoremap <Down> :resize -5<CR>
+nnoremap <Left> :vertical resize +5<CR>
+nnoremap <Right> :vertical resize -5<CR>
 
 let g:lightline = {
       \ 'colorscheme': 'wombat',
