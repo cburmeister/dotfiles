@@ -1,0 +1,30 @@
+session:
+  name: "discogs-dev"
+  windows:
+    - name: "local"
+      clear: true
+      root: "~/src/discogs"
+      layout: main-vertical 
+      filters:
+        before:
+          - "workon discogs-dev"
+          - "rvm gemset use discogs-dev"
+      panes:
+        - cmd: "git diff"
+          focus: true
+        - cmd: "fab serve"
+        - cmd: "python -i scripts/console.py"
+        - cmd: "grunt watch"
+    - name: "deamons"
+      clear: true
+      root: "~/src/discogs"
+      layout: tiled 
+      filters:
+        before:
+          - "workon discogs-dev"
+      panes:
+        - cmd: "mysql -uroot dev_discogs"
+        - cmd: "redis-cli"
+        - cmd: "irssi"
+        - cmd: "pianobar"
+          focus: true
