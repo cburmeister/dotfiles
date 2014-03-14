@@ -42,7 +42,6 @@ set number hlsearch incsearch ignorecase smartcase
 
 set ignorecase incsearch smartcase showmatch showcmd hidden
 
-set mouse=a
 set cursorline
 
 set clipboard=unnamed
@@ -89,6 +88,9 @@ nnoremap <Up> :resize +5<CR>
 nnoremap <Down> :resize -5<CR>
 nnoremap <Left> :vertical resize +5<CR>
 nnoremap <Right> :vertical resize -5<CR>
+
+" https://mug.im/save-a-file-as-root-in-vim/
+cmap w!! w !sudo tee % >/dev/null
 
 let g:lightline = {
       \ 'colorscheme': 'wombat',
