@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sudo -v
+
+gem install bundler
+gem install lolcommits
+gem install lorem
+gem install lunchy
+gem install sinatra
+gem install terminal-notifier
