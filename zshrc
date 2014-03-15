@@ -9,7 +9,7 @@ fpath=($HOME/zsh/completions $fpath)
 autoload -U compinit
 compinit
 
-plugins=(git pip python brew heroku pass)
+plugins=(git pip python brew heroku pass rvm)
 
 setopt hist_ignore_dups
 
@@ -19,6 +19,7 @@ PATH="/usr/local/share/npm/bin:$PATH"
 PATH="/usr/local/heroku/bin:$PATH"
 PATH="/usr/local/bin:$PATH"
 PATH="~/bin:$PATH"
+PATH="~/.rvm/bin:$PATH"
 
 export PATH
 
