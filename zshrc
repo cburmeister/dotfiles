@@ -29,3 +29,5 @@ pyenv virtualenvwrapper
 export PYTHONSTARTUP=~/.pythonrc.py
 
 alias ls='ls -GpF'
+
+compctl -g '~/.teamocil/*(:t:r)' teamocil
