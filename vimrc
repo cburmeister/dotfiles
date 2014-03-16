@@ -1,59 +1,79 @@
 set nocompatible
 
-syntax on
-filetype on
-filetype indent on
-filetype plugin on
-
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+filetype on
+filetype plugin on
+
+Bundle 'ciaranm/detectindent'
+Bundle 'flazz/vim-colorschemes'
 Bundle 'gmarik/vundle'
+Bundle 'itchyny/lightline.vim'
+Bundle 'jwhitley/vim-matchit'
+Bundle 'kien/ctrlp.vim'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'lokaltog/vim-easymotion'
+Bundle 'majutsushi/tagbar'
+Bundle 'mileszs/ack.vim'
+Bundle 'mitsuhiko/vim-jinja'
+Bundle 'msanders/snipmate.vim'
+Bundle 'myusuf3/numbers.vim'
+Bundle 'nvie/vim-flake8'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'mileszs/ack.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'myusuf3/numbers.vim'
-Bundle 'nvie/vim-flake8'
-Bundle 'mitsuhiko/vim-jinja'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'flazz/vim-colorschemes'
-Bundle 'itchyny/lightline.vim'
 Bundle 'wellle/targets.vim'
+Bundle 'yegappan/mru'
+Bundle 'tristen/vim-sparkup'
+
+colorscheme smyck
 
 set exrc " enable per-directory .vimrc files
 set secure " disable unsafe commands in local .vimrc files                  
 
-set expandtab
-set shiftwidth=4
-set tabstop=4
-set smarttab
+set expandtab shiftwidth=4
+set nobackup nowritebackup noswapfile
+set hlsearch incsearch ignorecase smartcase showmatch
 
-set ai
-set wrap linebreak
-
-set encoding=utf-8 fileencoding=utf-8
-set nobackup nowritebackup noswapfile autoread
-set number hlsearch incsearch ignorecase smartcase
-
-set ignorecase incsearch smartcase showmatch showcmd hidden
-
+set number
+set hidden
 set cursorline
 
-set clipboard=unnamed
-set laststatus=2
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.pyc/*
 
-colorscheme smyck
+let mapleader=","
+
+nmap <leader>q :nohlsearch<CR>
+nmap <leader>t :NERDTreeToggle<CR>
+nnoremap <leader>p :CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
+nmap <space><space> :w<cr>
+
+nmap <F8> :TagbarToggle<CR>
+
+nmap j gj
+nmap k gk
+
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+" https://mug.im/save-a-file-as-root-in-vim/
+cmap w!! w !sudo tee % >/dev/null
+
+:iabbrev pdb # XXX BREAKPOINT XXX <cr>import pdb; pdb.set_trace()
 
 au BufNewFile,BufRead *.html,*.mail setlocal ft=htmljinja
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile TODO,*.TODO,*.todo set filetype=todo
-
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,.pyc/*
 
 let NERDTreeIgnore=['\.pyc$']
 let NERDTreeMinimalUI = 1
@@ -65,32 +85,6 @@ let g:ctrlp_mruf_last_entered=1
 
 let g:ackhighlight=1
 
-:iabbrev pdb # XXX BREAKPOINT XXX <cr>import pdb; pdb.set_trace()
-
-let mapleader=","
-
-nmap <leader>q :nohlsearch<CR>
-nmap <leader>t :NERDTreeToggle<CR>
-nnoremap <leader>p :CtrlP<CR>
-nnoremap <leader>b :CtrlPBuffer<CR>
-nmap <space><space> :w<cr>
-
-nmap j gj
-nmap k gk
-
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
-
-" https://mug.im/resizing-panes-in-vim-with-your-arrow-keys/
-nnoremap <Up> :resize +5<CR>
-nnoremap <Down> :resize -5<CR>
-nnoremap <Left> :vertical resize +5<CR>
-nnoremap <Right> :vertical resize -5<CR>
-
-" https://mug.im/save-a-file-as-root-in-vim/
-cmap w!! w !sudo tee % >/dev/null
 
 let g:lightline = {
       \ 'colorscheme': 'wombat',
