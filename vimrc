@@ -14,15 +14,12 @@ Bundle 'jwhitley/vim-matchit'
 Bundle 'kien/ctrlp.vim'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'lokaltog/vim-easymotion'
-Bundle 'majutsushi/tagbar'
 Bundle 'mileszs/ack.vim'
 Bundle 'mitsuhiko/vim-jinja'
-Bundle 'msanders/snipmate.vim'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'nvie/vim-flake8'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
-Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-markdown'
@@ -31,7 +28,6 @@ Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
 Bundle 'wellle/targets.vim'
 Bundle 'yegappan/mru'
-Bundle 'tristen/vim-sparkup'
 
 colorscheme smyck
 
@@ -46,20 +42,22 @@ set number
 set hidden
 set cursorline
 
+set scrolloff=3
+
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.pyc/*
 
 let mapleader=","
 
 nmap <leader>q :nohlsearch<CR>
 nmap <leader>t :NERDTreeToggle<CR>
-nnoremap <leader>p :CtrlP<CR>
-nnoremap <leader>b :CtrlPBuffer<CR>
 nmap <space><space> :w<cr>
-
 nmap <F8> :TagbarToggle<CR>
 
 nmap j gj
 nmap k gk
+
+nnoremap <leader>p :CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
 
 noremap <Up> <NOP>
 noremap <Down> <NOP>
@@ -84,7 +82,6 @@ let g:ctrlp_working_path_mode=0
 let g:ctrlp_mruf_last_entered=1
 
 let g:ackhighlight=1
-
 
 let g:lightline = {
       \ 'colorscheme': 'wombat',
