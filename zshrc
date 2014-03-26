@@ -27,6 +27,7 @@ eval "$(pyenv init -)"
 pyenv virtualenvwrapper
 
 export PYTHONSTARTUP=~/.pythonrc.py
+export EDITOR=/usr/bin/vim
 
 alias ls='ls -GpF'
 

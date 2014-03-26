@@ -1,0 +1,14 @@
+session:
+  name: "blog-dev"
+  windows:
+    - name: "local"
+      clear: true
+      root: "~/src/blog"
+      layout: main-vertical 
+      filters:
+        before:
+          - "workon blog-dev"
+      panes:
+        - cmd: "git diff"
+          focus: true
+        - cmd: "python run.py"
