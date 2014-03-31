@@ -3,8 +3,9 @@
 DOTFILES=$HOME/dotfiles
 
 link() {
-    ln -s $DOTFILES/$1 $HOME/$1
+    echo "Linking $DOTFILES/$1 -> $HOME/$1"
     rm -rf $HOME/$1;
+    ln -s $DOTFILES/$1 $HOME/$1
 }
 
 link .ackrc
@@ -16,6 +17,7 @@ link .pythonrc.py
 link .screenrc
 link .teamocil
 link .tmux.conf
+link .vim
 link .vimrc
 link .zsh
 link .zshrc

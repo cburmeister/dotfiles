@@ -1,5 +1,5 @@
-My system configuration. 
+# My system configuration
 
 ```bash
-$ ./bin/install.sh 
+$ ./bin/install.sh
 ```

@@ -50,7 +50,6 @@ brew cask install growlnotify
 brew cask install heroku-toolbelt
 brew cask install slack
 brew cask install audacity
-brew cask install flux
 
 # http://eafarris.com/xplanet-on-osx.html
 brew cask install xquartz

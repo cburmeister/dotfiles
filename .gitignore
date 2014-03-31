@@ -1,4 +1,4 @@
 .netrwhist
-vim/bundle/vundle
-config/pianobar/state
-config/configstore
+.vim/bundle/vundle
+.config/configstore
+.config/pianobar/state

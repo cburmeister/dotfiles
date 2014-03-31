@@ -74,8 +74,9 @@ au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile TODO,*.TODO,*.todo set filetype=todo
 
 let NERDTreeIgnore=['\.pyc$']
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
+let NERDTreeMinimalUI=1
+let NERDTreeDirArrows=1
+let NERDTreeShowHidden=1
 
 let g:ctrlp_custom_ignore = 'node_modules\|.bower\|static/dst\|static/dev\|.pyc'
 let g:ctrlp_working_path_mode=0
