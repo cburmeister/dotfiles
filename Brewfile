@@ -31,5 +31,6 @@ cask install growlnotify
 cask install heroku-toolbelt
 cask install slack
 cask install tunnelblick
+cask install virtualbox
 
 cleanup
