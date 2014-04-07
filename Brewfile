@@ -32,6 +32,7 @@ cask install dropbox
 cask install google-chrome
 cask install growlnotify
 cask install heroku-toolbelt
+cask install silverlight
 cask install slack
 cask install tunnelblick
 cask install virtualbox
