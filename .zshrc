@@ -1,34 +1,27 @@
-ZSH=$HOME/.oh-my-zsh
-
-ZSH_THEME="ys"
-
-# autocomplete functions directory
 fpath=($HOME/zsh/completions $fpath)
-
-# enable autocomplete function
 autoload -U compinit
 compinit
-
-plugins=(git pip python brew heroku pass rvm)
-
-setopt hist_ignore_dups
-
-source "$ZSH/oh-my-zsh.sh"
 
 PATH="/usr/local/share/npm/bin:$PATH"
 PATH="/usr/local/heroku/bin:$PATH"
 PATH="/usr/local/bin:$PATH"
-PATH="~/bin:$PATH"
-PATH="~/.rvm/bin:$PATH"
+PATH="$HOME/.rvm/bin:$PATH"
+PATH="$HOME/.bin:$PATH"
 
 export PATH
-
-eval "$(pyenv init -)"
-pyenv virtualenvwrapper
 
 export PYTHONSTARTUP=~/.pythonrc.py
 export EDITOR=/usr/bin/vim
 
-alias ls='ls -GpF'
+if [ -d "$HOME/.teamocil" ]; then
+    compctl -g '~/.teamocil/*(:t:r)' teamocil
+fi
 
-compctl -g '~/.teamocil/*(:t:r)' teamocil
+if which pyenv > /dev/null; then
+    eval "$(pyenv init -)";
+    pyenv virtualenvwrapper
+fi
+
+if [ -s "$HOME/.rvm/scripts/rvm" ]; then
+    source "$HOME/.rvm/scripts/rvm"
+fi
