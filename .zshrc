@@ -31,6 +31,10 @@ if [ -s "$HOME/.rvm/scripts/rvm" ]; then
     source "$HOME/.rvm/scripts/rvm"
 fi
 
+if [ -s "/usr/local/opt/autoenv/activate.sh" ]; then
+    source /usr/local/opt/autoenv/activate.sh
+fi
+
 function parse_git_branch {
     if which git > /dev/null; then
         git branch 2> /dev/null \

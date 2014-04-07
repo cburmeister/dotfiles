@@ -4,6 +4,7 @@ tap homebrew/versions
 tap phinze/homebrew-cask
 
 install ack
+install autoenv
 install boot2docker
 install brew-cask
 install docker
