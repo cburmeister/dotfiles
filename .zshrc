@@ -1,22 +1,22 @@
 fpath=($HOME/zsh/completions $fpath)
-autoload -U compinit
-compinit
+autoload -U compinit && compinit
+autoload -U colors && colors
 
 setopt prompt_subst
 
-PATH="/usr/local/share/npm/bin:$PATH"
-PATH="/usr/local/heroku/bin:$PATH"
-PATH="/usr/local/bin:$PATH"
-PATH="$HOME/.rvm/bin:$PATH"
 PATH="$HOME/.bin:$PATH"
+PATH="$HOME/.rvm/bin:$PATH"
+PATH="/usr/local/bin:$PATH"
+PATH="/usr/local/heroku/bin:$PATH"
+PATH="/usr/local/share/npm/bin:$PATH"
 
 typeset -U PATH
 export PATH
 
-export PYTHONSTARTUP=~/.pythonrc.py
-export EDITOR=/usr/bin/vim
-export VIRTUAL_ENV_DISABLE_PROMPT=1
 export CLICOLOR=1
+export EDITOR=/usr/bin/vim
+export PYTHONSTARTUP=~/.pythonrc.py
+export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 if [ -d "$HOME/.teamocil" ]; then
     compctl -g '~/.teamocil/*(:t:r)' teamocil
