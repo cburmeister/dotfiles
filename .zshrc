@@ -33,20 +33,25 @@ if [ -s "/usr/local/opt/autoenv/activate.sh" ]; then
     source /usr/local/opt/autoenv/activate.sh
 fi
 
+typeset -ga precmd_functions
+
 function parse_git_branch {
     if which git > /dev/null; then
-        git branch 2> /dev/null \
+        git_branch=$(git branch 2> /dev/null \
             | grep "*" \
             | sed -e 's/* \(.*\)/ \1/g' \
-            | { read branch; [[ -n $branch ]] && echo " $fg[white]on $fg[red]$branch"; }
+            | { read branch; [[ -n $branch ]] && echo " %{$fg[white]%}on %{$fg[red]%}$branch"; })
     fi
 }
 
 function parse_virtual_env {
-    echo $VIRTUAL_ENV \
+    virtual_env=$(echo $VIRTUAL_ENV \
         | grep -Eo '[^/]+/?$' \
         | cut -d / -f1 \
-        | { read env; [[ -n $env ]] && echo " $fg[white]using $fg[blue]$env" ; }
+        | { read env; [[ -n $env ]] && echo " %{$fg[white]%}using %{$fg[blue]%}$env" ; })
 }
 
-PROMPT='$fg[green]%~$(parse_git_branch)$(parse_virtual_env) $fg[white]→ '
+precmd_functions+=parse_git_branch
+precmd_functions+=parse_virtual_env
+
+PS1='%{$fg[green]%}%~${git_branch}${virtual_env} %{$fg[white]%}→ '
