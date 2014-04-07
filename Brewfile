@@ -17,7 +17,10 @@ install pass
 install pianobar
 install pyenv
 install pyenv-virtualenvwrapper
+install rbenv
+install rbenv-gem-rehash
 install redis
+install ruby-build
 install solr
 install tig
 install tmux

@@ -25,8 +25,8 @@ if which pyenv > /dev/null; then
     pyenv virtualenvwrapper
 fi
 
-if [ -s "$HOME/.rvm/scripts/rvm" ]; then
-    source "$HOME/.rvm/scripts/rvm"
+if which rbenv > /dev/null; then
+    eval "$(rbenv init -)";
 fi
 
 if [ -s "/usr/local/opt/autoenv/activate.sh" ]; then
