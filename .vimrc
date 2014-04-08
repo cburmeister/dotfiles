@@ -31,18 +31,15 @@ Bundle 'yegappan/mru'
 
 colorscheme smyck
 
-set exrc " enable per-directory .vimrc files
-set secure " disable unsafe commands in local .vimrc files                  
-
-set expandtab shiftwidth=4
-set nobackup nowritebackup noswapfile
-set hlsearch incsearch ignorecase smartcase showmatch
-
-set number
-set hidden
 set cursorline
-
+set expandtab shiftwidth=4
+set exrc " enable per-directory .vimrc files
+set hidden
+set hlsearch incsearch ignorecase smartcase showmatch
+set nobackup nowritebackup noswapfile
+set number
 set scrolloff=3
+set secure " disable unsafe commands in local .vimrc files                  
 
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.pyc/*
 

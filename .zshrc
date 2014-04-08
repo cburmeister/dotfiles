@@ -1,4 +1,4 @@
-fpath=($HOME/zsh/completions $fpath)
+fpath=($HOME/.zsh/completions $fpath)
 
 autoload -U compinit && compinit
 autoload -U colors && colors
@@ -11,10 +11,12 @@ export EDITOR=/usr/bin/vim
 export PYTHONSTARTUP=~/.pythonrc.py
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
+bindkey '^R' history-incremental-search-backward
+
 PATH="$PATH:$HOME/.bin"
 PATH="$PATH:/usr/local/bin"
-# PATH="$PATH:/usr/local/heroku/bin"
-# PATH="$PATH:/usr/local/share/npm/bin"
+PATH="$PATH:/usr/local/heroku/bin"
+PATH="$PATH:/usr/local/share/npm/bin"
 
 if [ -d "$HOME/.teamocil" ]; then
     compctl -g '~/.teamocil/*(:t:r)' teamocil
