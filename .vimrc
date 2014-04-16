@@ -3,14 +3,12 @@ set nocompatible
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-filetype on
-filetype plugin on
-
 Bundle 'ciaranm/detectindent'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'gmarik/vundle'
 Bundle 'itchyny/lightline.vim'
 Bundle 'jwhitley/vim-matchit'
+Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'lokaltog/vim-easymotion'
@@ -28,6 +26,10 @@ Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
 Bundle 'wellle/targets.vim'
 Bundle 'yegappan/mru'
+
+syntax on
+filetype on
+filetype plugin on
 
 colorscheme smyck
 
