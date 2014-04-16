@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTFILES=$HOME/dotfiles
+DOTFILES=$(pwd)
 
 link() {
     echo "Linking $DOTFILES/$1 -> $HOME/$1"

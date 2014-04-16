@@ -5,7 +5,7 @@ SRC_DIR="$HOME/src"
 # ensure src directory exists
 if [ ! -d "$SRC_DIR" ]; then
     echo "Creating source directory..."
-    mkdir $SRC_DIR
+    mkdir "$SRC_DIR"
 fi
 
 # ensure git is installed
@@ -30,6 +30,6 @@ do
     TARGET_DIR=$SRC_DIR/$REPO_NAME
 
     if [ ! -d "$TARGET_DIR" ]; then
-        git clone $URL $TARGET_DIR
+        git clone "$URL" "$TARGET_DIR"
     fi
 done
