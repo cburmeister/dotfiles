@@ -11,6 +11,11 @@ export EDITOR=/usr/bin/vim
 export PYTHONSTARTUP=~/.pythonrc.py
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt appendhistory  # don't clobber history files
+
 bindkey '^R' history-incremental-search-backward
 
 PATH="$PATH:$HOME/.bin"
