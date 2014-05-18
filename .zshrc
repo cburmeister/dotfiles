@@ -43,19 +43,19 @@ fi
 typeset -ga precmd_functions
 
 function parse_git_branch {
-    if which git > /dev/null; then
-        git_branch=$(git branch 2> /dev/null \
-            | grep "*" \
-            | sed -e 's/* \(.*\)/ \1/g' \
-            | { read branch; [[ -n $branch ]] && echo " %{$fg[white]%}on %{$fg[red]%}$branch"; })
+    if $(git rev-parse --is-inside-work-tree > /dev/null 2>&1); then
+        git_branch=$(echo " %{$fg[white]%}on %{$fg[red]%}$(git rev-parse --abbrev-ref HEAD)")
+    else
+        git_branch=""
     fi
 }
 
 function parse_virtual_env {
-    virtual_env=$(echo $VIRTUAL_ENV \
-        | grep -Eo '[^/]+/?$' \
-        | cut -d / -f1 \
-        | { read env; [[ -n $env ]] && echo " %{$fg[white]%}using %{$fg[blue]%}$env" ; })
+    if [ -n "${VIRTUAL_ENV}" ]; then
+        virtual_env=$(echo " %{$fg[white]%}using %{$fg[blue]%}${VIRTUAL_ENV##*/}")
+    else
+        virtual_env=""
+    fi
 }
 
 precmd_functions+=parse_git_branch
