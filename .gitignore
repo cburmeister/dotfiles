@@ -1,4 +1,6 @@
 .netrwhist
-.vim/bundle/vundle
+.vim/bundle
 .config/configstore
 .config/pianobar/state
+.config/hub
+*.lock
