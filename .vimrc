@@ -3,6 +3,7 @@ set nocompatible
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+Bundle "ekalinin/Dockerfile.vim"
 Bundle 'ciaranm/detectindent'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'gmarik/vundle'

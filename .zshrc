@@ -44,6 +44,12 @@ function setup_services {
     if [ -s "/usr/local/opt/autoenv/activate.sh" ]; then
         source /usr/local/opt/autoenv/activate.sh
     fi
+
+    if which boot2docker > /dev/null; then
+        if boot2docker status | grep running > /dev/null; then
+            export DOCKER_HOST=tcp://localhost:4243
+        fi
+    fi
 }
 
 function setup_prompt {
