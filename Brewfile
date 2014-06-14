@@ -8,6 +8,7 @@ install autoenv
 install boot2docker
 install brew-cask
 install docker
+install elasticsearch
 install git
 install libjpeg
 install memcached
@@ -20,6 +21,7 @@ install pyenv-virtualenvwrapper
 install rbenv
 install rbenv-gem-rehash
 install redis
+install rtorrent
 install ruby-build
 install solr
 install tig
@@ -36,5 +38,6 @@ cask install silverlight
 cask install slack
 cask install tunnelblick
 cask install virtualbox
+cask install vagrant
 
 cleanup
