@@ -9,6 +9,7 @@ install boot2docker
 install brew-cask
 install docker
 install elasticsearch
+install gcc
 install git
 install libjpeg
 install memcached
@@ -30,6 +31,7 @@ install wget
 install zsh
 
 cask install audacity
+cask install caffeine
 cask install dropbox
 cask install google-chrome
 cask install growlnotify
