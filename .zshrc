@@ -28,10 +28,6 @@ function setup_path {
 }
 
 function setup_services {
-    if [ -d "$HOME/.teamocil" ]; then
-        compctl -g '~/.teamocil/*(:t:r)' teamocil
-    fi
-
     if which pyenv > /dev/null; then
         eval "$(pyenv init -)";
         pyenv virtualenvwrapper
