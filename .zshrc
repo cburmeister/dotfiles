@@ -12,6 +12,8 @@ function configure_zsh {
     export PYTHONSTARTUP=~/.pythonrc.py
     export VIRTUAL_ENV_DISABLE_PROMPT=1
 
+    export GOPATH=$HOME/src/go
+
     HISTFILE=~/.histfile
     HISTSIZE=1000
     SAVEHIST=1000
@@ -25,6 +27,7 @@ function setup_path {
     PATH="$PATH:/usr/local/bin"
     PATH="$PATH:/usr/local/heroku/bin"
     PATH="$PATH:/usr/local/share/npm/bin"
+    PATH="$PATH:$GOPATH/bin"
 }
 
 function setup_services {

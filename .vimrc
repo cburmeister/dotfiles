@@ -27,6 +27,7 @@ Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
 Bundle 'wellle/targets.vim'
 Bundle 'yegappan/mru'
+Bundle 'fatih/vim-go'
 
 syntax on
 filetype on
@@ -77,6 +78,9 @@ let NERDTreeIgnore=['\.pyc$']
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let NERDTreeShowHidden=1
+
+let g:go_disable_autoinstall=1
+let g:go_fmt_autosave = 0
 
 let g:ctrlp_custom_ignore = 'node_modules\|.bower\|static/dst\|static/dev\|.pyc'
 let g:ctrlp_working_path_mode=0
