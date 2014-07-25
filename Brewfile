@@ -9,8 +9,10 @@ install boot2docker
 install brew-cask
 install docker
 install elasticsearch
+install exiftool
 install gcc
 install git
+install httpie
 install libjpeg
 install memcached
 install mongodb
