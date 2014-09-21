@@ -5,9 +5,7 @@ tap phinze/homebrew-cask
 
 install ack
 install autoenv
-install boot2docker
 install brew-cask
-install docker
 install elasticsearch
 install exiftool
 install gcc
@@ -33,12 +31,9 @@ install wget
 install zsh
 
 cask install audacity
-cask install caffeine
 cask install dropbox
 cask install google-chrome
 cask install growlnotify
-cask install heroku-toolbelt
-cask install silverlight
 cask install slack
 cask install tunnelblick
 cask install virtualbox

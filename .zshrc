@@ -45,14 +45,6 @@ function setup_services {
     fi
 }
 
-function setup_boot2docker {
-    if which boot2docker > /dev/null; then
-        if boot2docker status | grep running > /dev/null; then
-            export DOCKER_HOST=tcp://:2375
-        fi
-    fi
-}
-
 function setup_prompt {
     typeset -ga precmd_functions
 
@@ -81,5 +73,4 @@ function setup_prompt {
 configure_zsh
 setup_path
 setup_services
-setup_boot2docker
 setup_prompt
