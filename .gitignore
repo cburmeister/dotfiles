@@ -3,4 +3,4 @@
 .config/configstore
 .config/pianobar/state
 .config/hub
-*.lock
+Gemfile.lock
