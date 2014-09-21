@@ -33,7 +33,6 @@ install zsh
 cask install audacity
 cask install dropbox
 cask install google-chrome
-cask install growlnotify
 cask install slack
 cask install tunnelblick
 cask install virtualbox
