@@ -24,7 +24,6 @@ install rbenv-gem-rehash
 install redis
 install rtorrent
 install ruby-build
-install solr
 install terminal-notifier
 install tig
 install tmux
