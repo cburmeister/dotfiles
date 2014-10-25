@@ -1,37 +1,41 @@
-set nocompatible
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle "ekalinin/Dockerfile.vim"
-Bundle 'ciaranm/detectindent'
-Bundle 'flazz/vim-colorschemes'
-Bundle 'gmarik/vundle'
-Bundle 'itchyny/lightline.vim'
-Bundle 'jwhitley/vim-matchit'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'kien/ctrlp.vim'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'lokaltog/vim-easymotion'
-Bundle 'mileszs/ack.vim'
-Bundle 'mitsuhiko/vim-jinja'
-Bundle 'myusuf3/numbers.vim'
-Bundle 'nvie/vim-flake8'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-sensible'
-Bundle 'tpope/vim-surround'
-Bundle 'wellle/targets.vim'
-Bundle 'yegappan/mru'
-Bundle 'fatih/vim-go'
+Plugin 'ciaranm/detectindent'
+Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'fatih/vim-go'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'gmarik/vundle'
+Plugin 'itchyny/lightline.vim'
+Plugin 'jwhitley/vim-matchit'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'kien/ctrlp.vim'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'lokaltog/vim-easymotion'
+Plugin 'mileszs/ack.vim'
+Plugin 'mitsuhiko/vim-jinja'
+Plugin 'myusuf3/numbers.vim'
+Plugin 'nvie/vim-flake8'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-surround'
+Plugin 'wellle/targets.vim'
+Plugin 'yegappan/mru'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 syntax on
 filetype on
-filetype plugin on
 
 colorscheme smyck
 
