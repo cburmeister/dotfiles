@@ -14,8 +14,6 @@ link .config
 link .editrc
 link .gitconfig
 link .pythonrc.py
-link .screenrc
-link .teamocil
 link .tmux.conf
 link .vim
 link .vimrc
