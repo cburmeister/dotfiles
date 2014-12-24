@@ -9,3 +9,4 @@
 	lg = log --pretty=format:\"%C(yellow)%h%C(reset) %C(cyan)%ad%C(reset) %C(green)%aN%Creset%C(bold red)%d%C(reset) %s\" --date=short --no-merges
     fom = !git fetch origin && git merge origin/master
     caa = commit -a --amend -C HEAD
+    com = checkout master
