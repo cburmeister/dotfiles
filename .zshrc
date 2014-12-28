@@ -67,7 +67,10 @@ function setup_prompt {
     precmd_functions+=parse_git_branch
     precmd_functions+=parse_virtual_env
 
-    PS1='%{$fg[green]%}%~${git_branch}${virtual_env} %{$fg[white]%}→ '
+    precmd() { print "" }
+
+    newline=$'\n'
+    PS1='%{$fg[green]%}%~${git_branch}${virtual_env} %{$fg[white]%}${newline}→ '
 }
 
 configure_zsh
