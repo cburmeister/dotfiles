@@ -19,6 +19,7 @@ brew install rbenv-gem-rehash
 brew install redis
 brew install ruby-build
 brew install terminal-notifier
+brew install the_silver_searcher
 brew install tmux
 brew install wget
 
