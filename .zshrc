@@ -1,5 +1,5 @@
 function configure_zsh {
-    fpath=($HOME/.zsh/completions $fpath)
+    fpath=(/usr/local/share/zsh/site-functions $fpath)
 
     autoload -U compinit && compinit
     autoload -U colors && colors
