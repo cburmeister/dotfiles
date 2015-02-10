@@ -25,6 +25,8 @@ function configure_zsh {
 function setup_path {
     PATH="$PATH:$HOME/.bin"
     PATH="$PATH:/usr/local/bin"
+    PATH="$PATH:/usr/local/Cellar/mysql55/5.5.40"
+    PATH="$PATH:/usr/local/Cellar/mysql55/5.5.40/bin"
     PATH="$PATH:/usr/local/heroku/bin"
     PATH="$PATH:/usr/local/share/npm/bin"
     PATH="$PATH:$GOPATH/bin"
