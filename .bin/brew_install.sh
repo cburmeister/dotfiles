@@ -1,3 +1,5 @@
+#!/bin/bash
+
 brew update
 
 brew install ack
@@ -8,7 +10,6 @@ brew install exiftool
 brew install git
 brew install libjpeg
 brew install memcached
-brew install mongodb
 brew install node
 brew install pass
 brew install pianobar
@@ -22,6 +23,8 @@ brew install terminal-notifier
 brew install the_silver_searcher
 brew install tmux
 brew install wget
+brew install webkit2png
+brew install whereami
 
 brew cleanup
 
