@@ -1,13 +1,14 @@
 [user]
-	name = Corey Burmeister
-	email = burmeister.corey@gmail.com
+        name = Corey Burmeister
+        email = burmeister.corey@gmail.com
 [credential]
-	helper = osxkeychain
+        helper = osxkeychain
 [color]
-    diff = auto
+        diff = auto
 [alias]
-	lg = log --pretty=format:\"%C(yellow)%h%C(reset) %C(cyan)%ad%C(reset) %C(green)%aN%Creset%C(bold red)%d%C(reset) %s\" --date=short --no-merges
-    caa = commit -a --amend -C HEAD
-    fom = !git fetch origin && git merge origin/master
-    com = checkout master
-    rom = rebase -i origin/master
+        lg = log --pretty=format:\"%C(yellow)%h%C(reset) %C(cyan)%ad%C(reset) %C(green)%aN%Creset%C(bold red)%d%C(reset) %s\" --date=short --no-merges
+        caa = commit -a --amend -C HEAD
+        fom = !git fetch origin && git merge origin/master
+        com = checkout master
+        rom = rebase -i origin/master
+        gissy = !git submodule foreach git pull origin master && git submodule update
