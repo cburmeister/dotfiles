@@ -6,9 +6,12 @@
 [color]
         diff = auto
 [alias]
-        lg = log --pretty=format:\"%C(yellow)%h%C(reset) %C(cyan)%ad%C(reset) %C(green)%aN%Creset%C(bold red)%d%C(reset) %s\" --date=short --no-merges
         caa = commit -a --amend -C HEAD
-        fom = !git fetch origin && git merge origin/master
         com = checkout master
-        rom = rebase -i origin/master
+        d = diff
+        f = fetch
+        fom = !git fetch origin && git merge origin/master
         gissy = !git submodule foreach git pull origin master && git submodule update
+        lg = log --pretty=format:\"%C(yellow)%h%C(reset) %C(cyan)%ad%C(reset) %C(green)%aN%Creset%C(bold red)%d%C(reset) %s\" --date=short --no-merges
+        rom = rebase -i origin/master
+        s = status
