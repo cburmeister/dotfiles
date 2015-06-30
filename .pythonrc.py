@@ -5,7 +5,7 @@ import os
 import atexit
 
 # color prompt
-# sys.ps1 = '\001\033[1;36m\002>>> \001\033[0m\002'
+sys.ps1 = '\001\033[1;36m\002>>> \001\033[0m\002'
 
 # tab completion
 try:
