@@ -40,6 +40,7 @@ filetype on
 
 colorscheme smyck
 
+set clipboard=unnamed
 set cursorline
 set expandtab shiftwidth=4
 set exrc " enable per-directory .vimrc files

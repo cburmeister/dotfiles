@@ -17,13 +17,14 @@ brew install pyenv
 brew install pyenv-virtualenvwrapper
 brew install rbenv
 brew install rbenv-gem-rehash
+brew install reattach-to-user-namespace
 brew install redis
 brew install ruby-build
 brew install terminal-notifier
 brew install the_silver_searcher
 brew install tmux
-brew install wget
 brew install webkit2png
+brew install wget
 brew install whereami
 
 brew cleanup
