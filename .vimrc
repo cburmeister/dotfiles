@@ -14,8 +14,6 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'jwhitley/vim-matchit'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'lokaltog/vim-easymotion'
 Plugin 'mileszs/ack.vim'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'myusuf3/numbers.vim'
@@ -30,7 +28,6 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'wellle/targets.vim'
-Plugin 'yegappan/mru'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
