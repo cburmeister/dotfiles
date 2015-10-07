@@ -1,0 +1,38 @@
+#!/usr/bin/env python
+from __future__ import print_function
+
+COLOR = '\x1b[0;48;5;%dm\x1b[38;5;16m'
+RESET = '\x1b[0m'
+
+SWATCH_WIDTH = 5
+
+def blank():
+    print(' ', end='')
+
+def color(code):
+    code_label = str(code).rjust(SWATCH_WIDTH)
+    print('%s%s%s' % (COLOR % code, code_label, RESET), end='')
+
+def colors(start, length):
+    for code in range(start, start + length):
+        color(code)
+
+def cubes():
+    for start in [16, 88, 160]:
+        for row in range(6):
+            colors(start + row * 6, 6)
+            blank()
+            colors(start + 36 + 6 * row, 6)
+            print()
+        print()
+
+if __name__ == '__main__':
+    colors(0, 8); print()
+    colors(8, 8); print()
+
+    print()
+
+    cubes(); print()
+
+    colors(232, 12); print()
+    colors(244, 12); print()

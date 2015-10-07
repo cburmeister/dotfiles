@@ -8,6 +8,7 @@ brew install brew-cask
 brew install elasticsearch
 brew install entr
 brew install exiftool
+brew install fpp
 brew install git
 brew install libjpeg
 brew install memcached
@@ -21,6 +22,7 @@ brew install redis
 brew install terminal-notifier
 brew install the_silver_searcher
 brew install tmux
+brew install urlview
 brew install webkit2png
 brew install wget
 brew install whereami
