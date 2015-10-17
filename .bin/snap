@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# Snaps an image with the default video device.
+#
+
+DIRECTORY="$HOME/.snaps"
+mkdir $DIRECTORY 2>/dev/null
+imagesnap -q -w 1 "$DIRECTORY/$(date +"%Y-%m-%d-%H%M%S").jpeg"
