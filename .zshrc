@@ -78,3 +78,12 @@ configure_zsh
 setup_path
 setup_services
 setup_prompt
+
+alias dm='docker-machine'
+alias dc='docker-compose'
+alias dcr='docker-compose run --rm'
+alias dcu='docker-compose up -d --no-recreate'
+
+function dme {
+    eval "$(docker-machine env $1)" && docker-machine ls
+}
