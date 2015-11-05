@@ -71,7 +71,7 @@ function setup_prompt {
     newline=$'\n'
     PS1='%{$fg[yellow]%}%n%{$fg[white]%} @ %{$fg[magenta]%}%m '
     PS1+='%{$fg[white]%}in %{$fg[green]%}%~'
-    PS1+='${git_branch}${virtual_env} %{$fg[white]%}${newline}→ '
+    PS1+='${git_branch}${virtual_env} %{$fg[white]%}${newline}$ '
 }
 
 configure_zsh
