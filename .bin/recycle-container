@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Stops, removes, and recreates all containers or a single containers if
+# provided as an argument.
+#
+
+docker-compose stop $1
+docker-compose rm --force $1
+docker-compose up -d --no-recreate $1
