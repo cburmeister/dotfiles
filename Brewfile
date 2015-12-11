@@ -22,6 +22,7 @@ brew 'reattach-to-user-namespace'
 brew 'the_silver_searcher'
 brew 'tmux'
 brew 'urlview'
+brew 'vim'
 brew 'webkit2png'
 brew 'wget'
 
