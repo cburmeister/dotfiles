@@ -74,8 +74,9 @@ cmap w!! w !sudo tee % >/dev/null
 :iabbrev pdb # XXX BREAKPOINT XXX <cr>import pdb; pdb.set_trace()
 
 au BufNewFile,BufRead *.html,*.mail setlocal ft=htmljinja
-au BufRead,BufNewFile *.md set filetype=markdown
-au BufRead,BufNewFile TODO,*.TODO,*.todo set filetype=todo
+au BufNewFile,BufRead *.md,*.mkd,*.markdown set filetype=markdown
+au BufNewFile,BufRead *.md,*.mkd,*.markdown set spell
+au BufNewFile,BufRead TODO,*.TODO,*.todo set filetype=todo
 
 let NERDTreeIgnore=['\.pyc$']
 let NERDTreeMinimalUI=1
