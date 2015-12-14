@@ -17,10 +17,11 @@ export PYTHONSTARTUP=~/.pythonrc.py
 
 bindkey '^R' history-incremental-search-backward
 
+PATH="$PATH:$GOPATH/bin"
 PATH="$PATH:$HOME/.bin"
+PATH="$PATH:$HOME/Dropbox/bin"
 PATH="$PATH:/usr/local/bin"
 PATH="$PATH:/usr/local/share/npm/bin"
-PATH="$PATH:$GOPATH/bin"
 
 if [ -s "/usr/local/opt/autoenv/activate.sh" ]; then
     source /usr/local/opt/autoenv/activate.sh
