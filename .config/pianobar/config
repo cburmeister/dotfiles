@@ -6,3 +6,5 @@ format_nowplaying_station = Station [35m%n[0m
 format_list_song = %i) %a - %t%r
 
 audio_quality = high
+
+event_command = ~/.config/pianobar/eventcmd.sh
