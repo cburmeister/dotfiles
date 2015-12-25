@@ -1,6 +1,8 @@
+.config/cmus/
+.config/configstore
+.config/hub
+.config/pianobar/state
+.config/ranger/
 .netrwhist
 .vim/bundle
-.config/configstore
-.config/pianobar/state
-.config/hub
 Gemfile.lock
