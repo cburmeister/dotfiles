@@ -1,7 +1,6 @@
 tap 'caskroom/cask'
 tap 'homebrew/versions'
 
-brew 'ack'
 brew 'asciinema'
 brew 'autoenv'
 brew 'brew-cask'

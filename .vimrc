@@ -14,7 +14,6 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'jwhitley/vim-matchit'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
-Plugin 'mileszs/ack.vim'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'myusuf3/numbers.vim'
 Plugin 'nvie/vim-flake8'
@@ -95,8 +94,6 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ --ignore "**/*.pyc"
       \ -g ""'
 
-
-let g:ackhighlight=1
 
 let g:lightline = {
       \ 'colorscheme': 'wombat',
