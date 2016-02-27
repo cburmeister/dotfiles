@@ -14,6 +14,7 @@ link .config
 link .editrc
 link .gitconfig
 link .pythonrc.py
+link .surfraw.conf
 link .tmux.conf
 link .vim
 link .vimrc
