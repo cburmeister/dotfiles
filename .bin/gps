@@ -1,6 +1,0 @@
-#!/bin/bash
-#
-# Open up google maps at your current coordinates using `whereami`.
-#
-
-open https://www.google.com/maps/preview/@$(whereami),20z
