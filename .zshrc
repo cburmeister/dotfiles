@@ -10,6 +10,7 @@ export CLICOLOR=1  # Enable colors when using `ls`
 export EDITOR=/usr/bin/vim  # Duh
 export PYTHONSTARTUP=~/.pythonrc.py
 export VIRTUAL_ENV_DISABLE_PROMPT=yes
+export GRUNT_CLONE_TOKEN=`cat /Users/cburmeister/.discogs.clone.token`
 
 # Reverse search history
 bindkey "^R" history-incremental-search-backward
