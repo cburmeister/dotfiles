@@ -1,5 +1,4 @@
-# My system configuration
+dotfiles
+========
 
-```bash
-$ ./bin/install.sh
-```
+My system configuration.

@@ -1,7 +1,0 @@
--type-set=coffee=.coffee
--type-add=css=.scss,.sass
---ignore-dir=.sass-cache/
---ignore-dir=static/dst/
---ignore-dir=static/dev/
---ignore-dir=.bower/
---ignore-dir=node_modules/

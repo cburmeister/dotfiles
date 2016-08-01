@@ -4,5 +4,5 @@
 .config/pianobar/state
 .config/ranger/
 .netrwhist
-.vim/bundle
 Gemfile.lock
+vim/.vim/bundle
