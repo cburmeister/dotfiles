@@ -1,7 +1,6 @@
 #!/bin/bash
 #
-# Stops, removes, and recreates all containers or a single containers if
-# provided as an argument.
+# Recycles all docker containers or an individual container if provided.
 #
 
 docker-compose stop $1

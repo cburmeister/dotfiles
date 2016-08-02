@@ -10,7 +10,7 @@ export CLICOLOR=1  # Enable colors when using `ls`
 export EDITOR=/usr/bin/vim  # Duh
 export PYTHONSTARTUP=~/.pythonrc.py
 export VIRTUAL_ENV_DISABLE_PROMPT=yes
-export GRUNT_CLONE_TOKEN=`cat /Users/cburmeister/.discogs.clone.token`
+export GRUNT_CLONE_TOKEN=`cat $HOME/.discogs.clone.token`
 
 # Reverse search history
 bindkey "^R" history-incremental-search-backward
@@ -32,7 +32,7 @@ SAVEHIST=1000
 
 # Setup path
 PATH="$PATH:$GOPATH/bin"
-PATH="$PATH:$HOME/.bin"
+PATH="$PATH:$HOME/bin"
 PATH="$PATH:$HOME/Dropbox/bin"
 PATH="$PATH:/usr/local/bin"
 PATH="$PATH:/usr/local/share/npm/bin"

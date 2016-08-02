@@ -8,7 +8,6 @@ call vundle#begin()
 Plugin 'ciaranm/detectindent'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'fatih/vim-go'
-Plugin 'flazz/vim-colorschemes'
 Plugin 'gmarik/vundle'
 Plugin 'itchyny/lightline.vim'
 Plugin 'jwhitley/vim-matchit'
@@ -33,8 +32,6 @@ filetype plugin indent on    " required
 
 syntax on
 filetype on
-
-colorscheme smyck
 
 set clipboard=unnamed
 set cursorline

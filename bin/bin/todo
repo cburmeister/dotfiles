@@ -1,5 +1,7 @@
 #!/bin/bash
+#
 # Find and open the nearest TODO file (or -g for the one in my homedir)
+#
 
 if [ "$1" = "-g" ]; then
     tpath=$HOME
