@@ -39,7 +39,7 @@ brew 'zsh'
 
 cask 'audacity'
 cask 'basictex'
-cask 'dockertoolbox'
+cask 'docker'
 cask 'dropbox'
 cask 'firefox'
 cask 'flux'
