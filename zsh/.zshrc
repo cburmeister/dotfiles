@@ -58,8 +58,4 @@ alias dcr="docker-compose run --rm"
 alias dcu="docker-compose up -d --no-recreate"
 alias dm="docker-machine"
 alias g="git"
-
-# Setup some functions
-function dme {
-    eval "$(docker-machine env $1)" && docker-machine ls
-}
+alias k="kubectl"
