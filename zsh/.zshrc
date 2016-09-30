@@ -60,6 +60,14 @@ alias dm="docker-machine"
 alias g="git"
 alias k="kubectl"
 
+# Get me today's new deep house releases on juno.co.uk
+function juno() {
+    curl -s http://www.juno.co.uk/deep-house/today/ \
+        | pup 'a:contains("Juno Player") attr{href}' \
+        | xargs -0  printf 'http://www.juno.co.uk%s' \
+        | xargs open
+}
+
 # Let me know when some command is finished executing
 function lmk() {
     start=$(date +%s)
