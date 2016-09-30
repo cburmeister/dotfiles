@@ -4,7 +4,6 @@ tap 'homebrew/versions'
 
 brew 'asciinema'
 brew 'autoenv'
-brew 'brew-cask'
 brew 'chrome-cli'
 brew 'cmus'
 brew 'coreutils'
