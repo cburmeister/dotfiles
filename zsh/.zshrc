@@ -17,13 +17,17 @@ bindkey "^R" history-incremental-search-backward
 
 # Enable autoenv
 if [ -s "/usr/local/opt/autoenv/activate.sh" ]; then
-    source /usr/local/opt/autoenv/activate.sh
+    source "/usr/local/opt/autoenv/activate.sh"
 fi
 
 # Enable pyenv and virtualenvwrapper
 if which pyenv > /dev/null; then
     eval "$(pyenv init -)" && pyenv virtualenvwrapper
 fi
+
+# Enable node version manager
+export NVM_DIR="$HOME/.nvm"
+source "/usr/local/opt/nvm/nvm.sh"
 
 # Reroute zsh history and expand the capacity
 HISTFILE=~/.histfile
