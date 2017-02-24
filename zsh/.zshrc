@@ -29,6 +29,9 @@ fi
 export NVM_DIR="$HOME/.nvm"
 source "/usr/local/opt/nvm/nvm.sh"
 
+# Enable docker via dinghy
+eval $(dinghy env)
+
 # Reroute zsh history and expand the capacity
 HISTFILE=~/.histfile
 HISTSIZE=1000
