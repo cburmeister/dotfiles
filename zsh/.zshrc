@@ -43,6 +43,7 @@ PATH="$PATH:$HOME/bin"
 PATH="$PATH:$HOME/Dropbox/bin"
 PATH="$PATH:/usr/local/bin"
 PATH="$PATH:/usr/local/share/npm/bin"
+PATH="$PATH:$HOME/src/platform/cli-utils"
 
 # Enable vcs info in prompt
 autoload -U vcs_info
@@ -65,7 +66,7 @@ alias dcr="docker-compose run --rm"
 alias dcu="docker-compose up -d --no-recreate"
 alias dm="docker-machine"
 alias g="git"
-alias k="kubectl"
+alias k="kwrapper"
 
 # Get me today's new deep house releases on juno.co.uk
 function juno() {
