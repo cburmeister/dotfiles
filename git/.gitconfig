@@ -1,9 +1,9 @@
 [user]
-        name = Corey Burmeister
-        email = burmeister.corey@gmail.com
+	name = Corey Burmeister
+	email = burmeister.corey@gmail.com
 	signingkey = 95AF6C24
 [credential]
-        helper = osxkeychain
+	helper = osxkeychain
 [color]
         diff = auto
 [alias]
