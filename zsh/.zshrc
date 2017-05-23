@@ -6,6 +6,8 @@ autoload -U compinit && compinit  # Enable completion
 setopt no_case_glob  # Ignore case when globbing
 setopt appendhistory  # don't clobber history files
 
+setopt interactivecomments
+
 export CLICOLOR=1  # Enable colors when using `ls`
 export EDITOR=/usr/bin/vim  # Duh
 export PYTHONSTARTUP=~/.pythonrc.py
