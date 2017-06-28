@@ -4,7 +4,7 @@ autoload -U colors && colors  # Enable colors
 autoload -U compinit && compinit  # Enable completion
 
 setopt no_case_glob  # Ignore case when globbing
-setopt appendhistory  # don't clobber history files
+setopt appendhistory  # dont clobber history files
 
 setopt interactivecomments
 
@@ -69,8 +69,9 @@ alias dcu="docker-compose up -d --no-recreate"
 alias dm="docker-machine"
 alias g="git"
 alias k="kwrapper"
+alias o="open"
 
-# Get me today's new deep house releases on juno.co.uk
+# Get me todays new deep house releases on juno.co.uk
 function juno() {
     curl -s http://www.juno.co.uk/deep-house/today/ \
         | pup 'a:contains("Juno Player") attr{href}' \
