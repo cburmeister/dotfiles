@@ -32,7 +32,7 @@ filetype plugin indent on    " required
 syntax on
 filetype on
 
-set clipboard=unnamed
+set clipboard^=unnamed,unnamedplus
 set cursorline
 set expandtab shiftwidth=4
 set exrc " enable per-directory .vimrc files
