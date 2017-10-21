@@ -6,12 +6,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'ciaranm/detectindent'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'fatih/vim-go'
 Plugin 'gmarik/vundle'
 Plugin 'jwhitley/vim-matchit'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'mtscout6/vim-cjsx'
 Plugin 'myusuf3/numbers.vim'
