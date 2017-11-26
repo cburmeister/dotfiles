@@ -27,10 +27,6 @@ if which pyenv > /dev/null; then
     eval "$(pyenv init -)" && pyenv virtualenvwrapper
 fi
 
-# Enable node version manager
-export NVM_DIR="$HOME/.nvm"
-source "/usr/local/opt/nvm/nvm.sh"
-
 # Enable docker via dinghy
 eval $(dinghy env)
 
