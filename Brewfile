@@ -51,6 +51,7 @@ brew 'zsh'
 
 cask 'basictex'
 cask 'dropbox'
+cask 'flux'
 cask 'google-chrome'
 cask 'ngrok'
 cask 'tunnelblick'
