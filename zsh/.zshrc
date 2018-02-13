@@ -12,7 +12,7 @@ export CLICOLOR=1  # Enable colors when using `ls`
 export EDITOR=/usr/bin/vim  # Duh
 export PYTHONSTARTUP=~/.pythonrc.py
 export VIRTUAL_ENV_DISABLE_PROMPT=yes
-export GRUNT_CLONE_TOKEN=`cat $HOME/.discogs.clone.token`
+# export GRUNT_CLONE_TOKEN=`cat $HOME/.discogs.clone.token`
 
 # Reverse search history
 bindkey "^R" history-incremental-search-backward
@@ -22,13 +22,15 @@ if [ -s "/usr/local/opt/autoenv/activate.sh" ]; then
     source "/usr/local/opt/autoenv/activate.sh"
 fi
 
-# Enable pyenv and virtualenvwrapper
-if which pyenv > /dev/null; then
-    eval "$(pyenv init -)" && pyenv virtualenvwrapper
-fi
+# # Enable pyenv and virtualenvwrapper
+# if which pyenv > /dev/null; then
+#     eval "$(pyenv init -)" && pyenv virtualenvwrapper
+# fi
 
-# Enable docker via dinghy
-eval $(dinghy env)
+# # Enable docker via dinghy
+# if which dinghy > /dev/null; then
+#     eval $(dinghy env)
+# fi
 
 # Reroute zsh history and expand the capacity
 HISTFILE=~/.histfile
@@ -36,12 +38,13 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 # Setup path
-PATH="$PATH:$GOPATH/bin"
-PATH="$PATH:$HOME/bin"
-PATH="$PATH:$HOME/Dropbox/bin"
-PATH="$PATH:/usr/local/bin"
-PATH="$PATH:/usr/local/share/npm/bin"
-PATH="$PATH:$HOME/src/platform/cli-utils"
+PATH="/opt/python-2.7.10/bin:$PATH"
+# PATH="$PATH:$GOPATH/bin"
+# PATH="$PATH:$HOME/bin"
+# PATH="$PATH:$HOME/Dropbox/bin"
+# PATH="$PATH:/usr/local/bin"
+# PATH="$PATH:/usr/local/share/npm/bin"
+# PATH="$PATH:$HOME/src/platform/cli-utils"
 
 # Enable vcs info in prompt
 autoload -U vcs_info

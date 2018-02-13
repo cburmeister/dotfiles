@@ -8,7 +8,7 @@ call vundle#begin()
 Plugin 'ciaranm/detectindent'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'fatih/vim-go'
+" Plugin 'fatih/vim-go'
 Plugin 'gmarik/vundle'
 Plugin 'jwhitley/vim-matchit'
 Plugin 'kchmck/vim-coffee-script'
