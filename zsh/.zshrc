@@ -30,6 +30,11 @@ fi
 # Enable docker via dinghy
 eval $(dinghy env)
 
+# Enable nodeenv
+if which nodenv > /dev/null; then
+    eval "$(nodenv init -)"
+fi
+
 # Reroute zsh history and expand the capacity
 HISTFILE=~/.histfile
 HISTSIZE=1000
