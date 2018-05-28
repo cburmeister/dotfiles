@@ -51,6 +51,7 @@ brew 'yarn'
 brew 'zsh'
 
 cask 'basictex'
+cask 'butt'
 cask 'dropbox'
 cask 'flux'
 cask 'google-chrome'
