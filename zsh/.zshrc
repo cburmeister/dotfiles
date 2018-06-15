@@ -71,3 +71,11 @@ alias dm="docker-machine"
 alias g="git"
 alias k="kwrapper"
 alias o="open"
+
+# Let me know when some command is finished executing
+function lmk() {
+    start=$(date +%s)
+    eval $@
+    duration=$(($(date +%s) - start))
+    echo "\"$@\" completed in $duration seconds." | ham
+}
