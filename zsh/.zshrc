@@ -79,3 +79,6 @@ function lmk() {
     duration=$(($(date +%s) - start))
     echo "\"$@\" completed in $duration seconds." | ham
 }
+
+# Enable kubernetes tab completion
+source <(kubectl completion zsh | sed s/kubectl/kwrapper/g)
