@@ -5,6 +5,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'chr4/nginx.vim'
 Plugin 'ciaranm/detectindent'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ekalinin/Dockerfile.vim'
