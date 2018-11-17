@@ -5,6 +5,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'chase/vim-ansible-yaml'
 Plugin 'chr4/nginx.vim'
 Plugin 'ciaranm/detectindent'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -72,6 +73,10 @@ cmap w!! w !sudo tee % >/dev/null
 au BufNewFile,BufRead *.html,*.mail setlocal ft=htmljinja
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile TODO,*.TODO,*.todo set filetype=todo
+
+" YAML
+au BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 let NERDTreeIgnore=['\.pyc$']
 let NERDTreeMinimalUI=1
