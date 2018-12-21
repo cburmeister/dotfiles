@@ -53,6 +53,7 @@ brew 'zsh'
 
 cask 'basictex'
 cask 'butt'
+cask 'docker'
 cask 'dropbox'
 cask 'flux'
 cask 'google-chrome'
