@@ -5,8 +5,7 @@ autoload -U compinit && compinit  # Enable completion
 
 setopt no_case_glob  # Ignore case when globbing
 setopt appendhistory  # dont clobber history files
-
-setopt interactivecomments
+setopt interactivecomments  # Allow comments at the prompt
 
 export CLICOLOR=1  # Enable colors when using `ls`
 export EDITOR=/usr/bin/vim  # Duh
@@ -71,14 +70,6 @@ alias dm="docker-machine"
 alias g="git"
 alias k="kwrapper"
 alias o="open"
-
-# Let me know when some command is finished executing
-function lmk() {
-    start=$(date +%s)
-    eval $@
-    duration=$(($(date +%s) - start))
-    echo "\"$@\" completed in $duration seconds." | ham
-}
 
 # Enable kubernetes tab completion
 source <(kubectl completion zsh | sed s/kubectl/kwrapper/g)
