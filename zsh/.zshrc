@@ -45,7 +45,7 @@ PATH="$PATH:$HOME/bin"
 PATH="$PATH:$HOME/Dropbox/bin"
 PATH="$PATH:/usr/local/bin"
 PATH="$PATH:/usr/local/share/npm/bin"
-PATH="$PATH:$HOME/src/platform/cli-utils"
+PATH="$PATH:$HOME/src/platform/plugins"
 
 # Enable vcs info in prompt
 autoload -U vcs_info
