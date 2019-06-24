@@ -5,4 +5,5 @@
 .config/ranger/
 .netrwhist
 Gemfile.lock
+dinghy/.dinghy/
 vim/.vim/bundle
