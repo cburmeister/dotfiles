@@ -28,6 +28,7 @@ Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'w0rp/ale'
 Plugin 'wellle/targets.vim'
+Plugin 'yarchived/wowlua.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
