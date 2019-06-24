@@ -68,7 +68,7 @@ alias dcr="docker-compose run --rm"
 alias dcu="docker-compose up -d --no-recreate"
 alias dm="docker-machine"
 alias g="git"
-alias k="kwrapper"
+alias k="kubectl"
 alias o="open"
 
 # Enable kubernetes tab completion
