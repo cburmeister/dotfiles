@@ -36,8 +36,8 @@ fi
 
 # Reroute zsh history and expand the capacity
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=100000
+SAVEHIST=100000
 
 # Setup path
 PATH="$PATH:$GOPATH/bin"
