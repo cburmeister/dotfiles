@@ -9,7 +9,7 @@ sys.ps1 = '\001\033[1;36m\002>>> \001\033[0m\002'
 
 # tab completion
 try:
-    import readline
+    import gnureadline as readline
 except ImportError:
     # Silently ignore missing readline module
     pass
