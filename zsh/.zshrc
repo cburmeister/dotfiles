@@ -73,3 +73,8 @@ alias o="open"
 
 # Enable kubernetes tab completion
 source <(kubectl completion zsh | sed s/kubectl/kwrapper/g)
+
+# Set some environment variables
+if [ -s "$HOME/Dropbox/.env" ]; then
+    source "$HOME/Dropbox/.env"
+fi
