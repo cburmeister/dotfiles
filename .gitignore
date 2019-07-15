@@ -1,6 +1,7 @@
 .config/cmus/
 .config/configstore
 .config/hub
+karabiner/
 .config/pianobar/state
 .config/ranger/
 .netrwhist
