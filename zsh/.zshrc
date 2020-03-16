@@ -45,7 +45,7 @@ PATH="$PATH:$HOME/bin"
 PATH="$PATH:$HOME/Dropbox/bin"
 PATH="$PATH:/usr/local/bin"
 PATH="$PATH:/usr/local/share/npm/bin"
-PATH="$PATH:$HOME/src/platform/plugins"
+PATH="$PATH:$HOME/src/discogs/platform/plugins/kubectl"
 
 # Enable vcs info in prompt
 autoload -U vcs_info
