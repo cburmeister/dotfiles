@@ -5,16 +5,10 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'chase/vim-ansible-yaml'
-Plugin 'chr4/nginx.vim'
 Plugin 'ciaranm/detectindent'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'fatih/vim-go'
 Plugin 'gmarik/vundle'
-Plugin 'hashivim/vim-terraform'
 Plugin 'jwhitley/vim-matchit'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'mtscout6/vim-cjsx'
 Plugin 'myusuf3/numbers.vim'
@@ -22,13 +16,12 @@ Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'w0rp/ale'
 Plugin 'wellle/targets.vim'
-Plugin 'yarchived/wowlua.vim'
+Plugin 'sheerun/vim-polyglot'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
