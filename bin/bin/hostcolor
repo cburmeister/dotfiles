@@ -1,8 +1,0 @@
-#!/bin/sh
-
-case "$(hostname)" in
-    monza) color=5 ;;
-    dc10) color=12 ;;
-    *) color=7 ;;
-esac
-echo $color
