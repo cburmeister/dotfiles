@@ -16,11 +16,6 @@ export GRUNT_CLONE_TOKEN=`cat $HOME/.discogs.clone.token`
 # Reverse search history
 bindkey "^R" history-incremental-search-backward
 
-# Enable autoenv
-if [ -s "/usr/local/opt/autoenv/activate.sh" ]; then
-    source "/usr/local/opt/autoenv/activate.sh"
-fi
-
 # Enable pyenv and virtualenvwrapper
 if which pyenv > /dev/null; then
     eval "$(pyenv init -)" && pyenv virtualenvwrapper

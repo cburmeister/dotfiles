@@ -3,7 +3,6 @@ tap 'codekitchen/dinghy'
 tap 'homebrew/versions'
 
 brew 'asciinema'
-brew 'autoenv'
 brew 'awscli'
 brew 'chrome-cli'
 brew 'chromedriver'
