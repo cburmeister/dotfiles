@@ -22,11 +22,6 @@ fi
 # Enable docker via dinghy
 eval $(dinghy env)
 
-# Enable nodeenv
-if which nodenv > /dev/null; then
-    eval "$(nodenv init -)"
-fi
-
 # Reroute zsh history and expand the capacity
 HISTFILE=~/.histfile
 HISTSIZE=100000
@@ -36,7 +31,6 @@ SAVEHIST=100000
 PATH="$PATH:$GOPATH/bin"
 PATH="$PATH:$HOME/bin"
 PATH="$PATH:/usr/local/bin"
-PATH="$PATH:/usr/local/share/npm/bin"
 
 # Enable vcs info in prompt
 autoload -U vcs_info
