@@ -35,10 +35,8 @@ SAVEHIST=100000
 # Setup path
 PATH="$PATH:$GOPATH/bin"
 PATH="$PATH:$HOME/bin"
-PATH="$PATH:$HOME/Dropbox/bin"
 PATH="$PATH:/usr/local/bin"
 PATH="$PATH:/usr/local/share/npm/bin"
-PATH="$PATH:$HOME/src/discogs/platform/plugins/kubectl"
 
 # Enable vcs info in prompt
 autoload -U vcs_info
@@ -65,7 +63,7 @@ alias k="kubectl"
 # Enable kubernetes tab completion
 source <(kubectl completion zsh | sed s/kubectl/kwrapper/g)
 
-# Set some environment variables
-if [ -s "$HOME/Dropbox/.env" ]; then
-    source "$HOME/Dropbox/.env"
+# Source my private/work configuration if mounted on this machine
+if [ -s "$HOME/Dropbox/.zshrc" ]; then
+    source "$HOME/Dropbox/.zshrc"
 fi
