@@ -5,10 +5,9 @@ compinit  # Enable completion
 setopt no_case_glob  # Ignore case when globbing
 setopt appendhistory  # dont clobber history files
 
-export CLICOLOR=1  # Enable colors when using `ls`
-export EDITOR=/usr/bin/vim  # Duh
-export PYTHONSTARTUP=~/.pythonrc.py
-export VIRTUAL_ENV_DISABLE_PROMPT=yes
+export CLICOLOR=1  # Enable colors
+export EDITOR=vim  # Duh
+export PYTHONSTARTUP=~/.pythonrc.py  # For python REPL history
 
 # Reverse search history
 bindkey "^R" history-incremental-search-backward
