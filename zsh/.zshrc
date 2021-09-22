@@ -1,7 +1,6 @@
-fpath=(/usr/local/share/zsh/site-functions $fpath)
-
-autoload -U colors && colors  # Enable colors
-autoload -U compinit && compinit  # Enable completion
+autoload -Uz compinit colors vcs_info
+colors  # Enable colors
+compinit  # Enable completion
 
 setopt no_case_glob  # Ignore case when globbing
 setopt appendhistory  # dont clobber history files
@@ -39,7 +38,6 @@ PATH="$PATH:$HOME/bin"
 PATH="$PATH:/usr/local/bin"
 
 # Enable vcs info in prompt
-autoload -U vcs_info
 zstyle ":vcs_info:*" enable git
 zstyle ":vcs_info:git*" formats "on $fg[red]%b$reset_color"
 precmd() {
