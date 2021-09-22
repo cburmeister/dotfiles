@@ -1,18 +1,28 @@
+################################################################################
+# Modules
+################################################################################
+
 autoload -Uz compinit colors vcs_info
 colors  # Enable colors
 compinit  # Enable completion
 
-setopt no_case_glob  # Ignore case when globbing
-setopt appendhistory  # dont clobber history files
+################################################################################
+# Configuration
+################################################################################
 
-export CLICOLOR=1  # Enable colors
-export EDITOR=vim  # Duh
-export PYTHONSTARTUP=~/.pythonrc.py  # For python REPL history
+setopt CORRECT_ALL  # Spell check for command line arguments
+setopt NO_CASE_GLOB  # Ignore case when globbing
 
-# Reverse search history
-bindkey "^R" history-incremental-search-backward
+################################################################################
+# Key bindings
+################################################################################
 
+bindkey "^R" history-incremental-search-backward  # Reverse search history
+
+################################################################################
 # Enable pyenv and pyenv-virtualenvwrapper
+################################################################################
+
 if command -v pyenv > /dev/null; then
     eval "$(pyenv init -)"
     eval "$(pyenv init --path)"
@@ -23,16 +33,30 @@ if command -v pyenv virtualenvwrapper > /dev/null; then
     pyenv virtualenvwrapper_lazy
 fi
 
-# Enable docker via dinghy
-eval $(dinghy env)
+################################################################################
+# Enable dinghy
+################################################################################
 
-# Reroute zsh history and expand the capacity
+if command -v dinghy > /dev/null; then
+    eval $(dinghy env)
+fi
+
+################################################################################
+# History
+################################################################################
+
 HISTFILE=~/.histfile
-HISTSIZE=100000
-SAVEHIST=100000
+HISTSIZE=5000
+SAVEHIST=5000
 
-# Setup path
-PATH="$PATH:$HOME/bin"
+setopt EXTENDED_HISTORY  # Track command time/duration
+setopt HIST_IGNORE_ALL_DUPS  # Clobber duplicates
+setopt HIST_IGNORE_SPACE  # Don't remember commands that start with whitespace
+setopt INC_APPEND_HISTORY  # Don't wait for shell to exit
+
+################################################################################
+# Prompt
+################################################################################
 
 # Enable vcs info in prompt
 zstyle ":vcs_info:*" enable git
@@ -47,7 +71,24 @@ setopt prompt_subst  # Enable command substitution within the prompt
 PS1="%F{yellow}%n%f @ %F{magenta}%m%f in %F{green}%~%f \$vcs_info_msg_0_
 $ "
 
-# Setup some aliases
+################################################################################
+# Path
+################################################################################
+
+PATH="$PATH:$HOME/bin"
+
+################################################################################
+# Environment
+################################################################################
+
+export CLICOLOR=1  # Enable colors
+export EDITOR=vim  # Duh
+export PYTHONSTARTUP=~/.pythonrc.py  # For python REPL history
+
+################################################################################
+# Aliases
+################################################################################
+
 alias d="docker"
 alias dc="docker-compose"
 alias dcr="docker-compose run --rm"
@@ -55,10 +96,10 @@ alias dcu="docker-compose up -d --no-recreate"
 alias g="git"
 alias k="kubectl"
 
-# Enable kubernetes tab completion
-source <(kubectl completion zsh | sed s/kubectl/kwrapper/g)
+################################################################################
+# Per host ZSH configuration
+################################################################################
 
-# Source my private/work configuration if mounted on this machine
 if [ -s "$HOME/Dropbox/.zshrc" ]; then
     source "$HOME/Dropbox/.zshrc"
 fi
