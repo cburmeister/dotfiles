@@ -33,9 +33,7 @@ HISTSIZE=100000
 SAVEHIST=100000
 
 # Setup path
-PATH="$PATH:$GOPATH/bin"
 PATH="$PATH:$HOME/bin"
-PATH="$PATH:/usr/local/bin"
 
 # Enable vcs info in prompt
 zstyle ":vcs_info:*" enable git
