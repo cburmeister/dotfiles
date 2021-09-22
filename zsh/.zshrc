@@ -14,9 +14,15 @@ export VIRTUAL_ENV_DISABLE_PROMPT=yes
 # Reverse search history
 bindkey "^R" history-incremental-search-backward
 
-# Enable pyenv and virtualenvwrapper
-if which pyenv > /dev/null; then
-    eval "$(pyenv init -)" && pyenv virtualenvwrapper
+# Enable pyenv and pyenv-virtualenvwrapper
+if command -v pyenv > /dev/null; then
+    eval "$(pyenv init -)"
+    eval "$(pyenv init --path)"
+fi
+
+if command -v pyenv virtualenvwrapper > /dev/null; then
+    export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+    pyenv virtualenvwrapper_lazy
 fi
 
 # Enable docker via dinghy
