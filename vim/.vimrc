@@ -1,31 +1,3 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'ciaranm/detectindent'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'gmarik/vundle'
-Plugin 'jwhitley/vim-matchit'
-Plugin 'mitsuhiko/vim-jinja'
-Plugin 'mtscout6/vim-cjsx'
-Plugin 'myusuf3/numbers.vim'
-Plugin 'rking/ag.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-surround'
-Plugin 'w0rp/ale'
-Plugin 'wellle/targets.vim'
-Plugin 'sheerun/vim-polyglot'
-
-call vundle#end()            " required
-filetype plugin indent on    " required
-
 syntax on
 filetype on
 
