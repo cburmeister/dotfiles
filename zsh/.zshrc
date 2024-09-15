@@ -10,7 +10,7 @@ compinit  # Enable completion
 # Configuration
 ################################################################################
 
-setopt CORRECT_ALL  # Spell check for command line arguments
+unsetopt correct_all  # Disable spell check for command line arguments
 setopt NO_CASE_GLOB  # Ignore case when globbing
 
 ################################################################################
