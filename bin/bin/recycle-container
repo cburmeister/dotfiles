@@ -1,8 +1,0 @@
-#!/bin/bash
-#
-# Recycles all docker containers or an individual container if provided.
-#
-
-docker-compose stop $1
-docker-compose rm --force $1
-docker-compose up -d --no-recreate $1
