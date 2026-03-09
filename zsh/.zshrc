@@ -21,7 +21,7 @@ setopt NO_CASE_GLOB  # Ignore case when globbing
 # Key bindings
 ################################################################################
 
-bindkey "^R" history-incremental-search-backward  # Reverse search history
+source <(fzf --zsh)  # Fuzzy history search (Ctrl-R), file finding (Ctrl-T), cd (Alt-C)
 
 ################################################################################
 # Enable pyenv and pyenv-virtualenvwrapper
