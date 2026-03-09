@@ -1,6 +1,3 @@
-[submodule "vim/.vim/pack/plugins/start/ctrlp"]
-	path = vim/.vim/pack/plugins/start/ctrlp
-	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "vim/.vim/pack/plugins/start/detectindent"]
 	path = vim/.vim/pack/plugins/start/detectindent
 	url = https://github.com/ciaranm/detectindent
@@ -31,3 +28,6 @@
 [submodule "vim/.vim/pack/plugins/start/vim-fugitive"]
 	path = vim/.vim/pack/plugins/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/.vim/pack/plugins/start/fzf.vim"]
+	path = vim/.vim/pack/plugins/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git

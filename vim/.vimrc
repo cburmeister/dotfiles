@@ -24,8 +24,8 @@ nmap <F8> :TagbarToggle<CR>
 nmap j gj
 nmap k gk
 
-nnoremap <leader>p :CtrlP<CR>
-nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>p :Files<CR>
+nnoremap <leader>b :Buffers<CR>
 
 noremap <Up> <NOP>
 noremap <Down> <NOP>
@@ -53,11 +53,5 @@ let NERDTreeShowHidden=1
 let g:go_disable_autoinstall=1
 let g:go_fmt_autosave = 0
 
-let g:ctrlp_custom_ignore = 'node_modules\|.bower\|static/dst\|static/dev\|.pyc'
-let g:ctrlp_working_path_mode=0
-let g:ctrlp_mruf_last_entered=1
-let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
-      \ --ignore .git
-      \ --ignore .DS_Store
-      \ --ignore "**/*.pyc"
-      \ -g ""'
+set rtp+=/opt/homebrew/opt/fzf
+let g:ackprg = 'rg --vimgrep --no-heading'
