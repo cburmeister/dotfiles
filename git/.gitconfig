@@ -9,11 +9,23 @@
 [alias]
         caa = commit -a --amend -C HEAD
         co = checkout
-        com = checkout master
+        com = "!f() { \
+                default=$(git ls-remote --symref origin HEAD | awk '/^ref:/ {sub(/.*\\//, \"\", $2); print $2}'); \
+                git checkout \"$default\"; \
+            }; f"
         d = diff
         f = fetch
-        fom = !git fetch origin && git merge origin/master
+        fom = "!f() { \
+                git fetch origin; \
+                default=$(git ls-remote --symref origin HEAD | awk '/^ref:/ {sub(/.*\\//, \"\", $2); print $2}'); \
+                echo \"Merging origin/$default...\"; \
+                git merge \"origin/$default\"; \
+            }; f"
         gissy = !git submodule foreach git pull origin master && git submodule update
         lg = log --pretty=format:\"%C(yellow)%h%C(reset) %C(cyan)%ad%C(reset) %C(green)%aN%Creset%C(bold red)%d%C(reset) %s\" --date=short --no-merges
-        rom = rebase -i origin/master
+        rom = "!f() { \
+                default=$(git ls-remote --symref origin HEAD | awk '/^ref:/ {sub(/.*\\//, \"\", $2); print $2}'); \
+                echo \"Rebasing interactively against origin/$default...\"; \
+                git rebase -i \"origin/$default\"; \
+            }; f"
         s = status
