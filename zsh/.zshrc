@@ -73,7 +73,6 @@ $ "
 
 export CLICOLOR=1  # Enable colors
 export EDITOR=vim  # Duh
-export PYTHONSTARTUP=~/.pythonrc.py  # For python REPL history
 
 ################################################################################
 # Aliases
