@@ -54,18 +54,27 @@ setopt INC_APPEND_HISTORY  # Don't wait for shell to exit
 # Prompt
 ################################################################################
 
+# Catppuccin Mocha Palette:
+# %b (Branch)   -> #f38ba8 (Red/Pink)
+# %n (User)     -> #89b4fa (Blue)
+# %m (Machine)  -> #cba6f7 (Mauve/Purple)
+# %~ (Path)     -> #a6e3a1 (Green)
+# Arrow symbol  -> #f5c2e7 (Pink)
+
 # Enable vcs info in prompt
+autoload -Uz vcs_info
 zstyle ":vcs_info:*" enable git
-zstyle ":vcs_info:git*" formats "on $fg[red]%b$reset_color"
+zstyle ":vcs_info:git*" formats "on %F{#f38ba8}%b%f"
+
 precmd() {
     vcs_info
-    print ""  # Extra newline before each prompt
+    print ""  # Extra newline
 }
 
-# Format prompt
-setopt prompt_subst  # Enable command substitution within the prompt
-PS1="%F{yellow}%n%f @ %F{magenta}%m%f in %F{green}%~%f \$vcs_info_msg_0_
-$ "
+setopt prompt_subst
+
+PS1='%F{#89b4fa}%n%f @ %F{#cba6f7}%m%f in %F{#a6e3a1}%~%f ${vcs_info_msg_0_}
+%F{#f5c2e7}❯%f '
 
 ################################################################################
 # Environment

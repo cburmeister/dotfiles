@@ -1,0 +1,36 @@
+# -----------------------------------------------------------------------------
+# Appearance & Effects
+# -----------------------------------------------------------------------------
+theme = Catppuccin Mocha
+
+# Transparency and Blur (Optimized for Apple Silicon)
+background-opacity = 0.92
+background-blur = true
+
+# Window Chrome
+window-decoration = true
+macos-titlebar-style = tabs
+window-step-resize = true
+
+# Padding (Balanced for a sleek, breathable look)
+window-padding-x = 12
+window-padding-y = 8
+
+# -----------------------------------------------------------------------------
+# Typography (Monaspace Argon)
+# -----------------------------------------------------------------------------
+font-family = "Monaspace Argon"
+font-size = 16
+
+# OpenType Features: Enables "Texture Healing" (calt) and Ligatures (liga)
+font-feature = liga
+font-feature = calt
+
+# Matches the title bar font to the terminal for visual consistency
+window-title-font-family = "Monaspace Argon"
+
+# -----------------------------------------------------------------------------
+# System & Performance
+# -----------------------------------------------------------------------------
+# Uses the high-resolution official Ghostty icon
+macos-icon = official
