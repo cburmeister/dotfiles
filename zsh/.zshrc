@@ -80,6 +80,7 @@ PS1='%F{#89b4fa}%n%f @ %F{#cba6f7}%m%f in %F{#a6e3a1}%~%f ${vcs_info_msg_0_}
 # Environment
 ################################################################################
 
+export CLAUDE_CODE_DISABLE_AUTO_MEMORY=1  # No more suprises :}
 export CLICOLOR=1  # Enable colors
 export EDITOR=vim  # Duh
 
