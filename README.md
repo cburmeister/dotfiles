@@ -24,14 +24,9 @@ Stow `claude` with `--no-folding` to avoid linking the rest of `~/.claude`:
 stow --no-folding -t $HOME claude
 ```
 
-Add this to `~/.claude/settings.json`:
+Add the status line to `~/.claude/settings.json` (plugins can't set it):
 ```json
 {
-  "hooks": {
-    "Notification": [
-      { "hooks": [ { "type": "command", "command": "~/.claude/hooks/tmux-bell.sh" } ] }
-    ]
-  },
   "statusLine": {
     "type": "command",
     "command": "bash ~/.claude/statusline-command.sh"
