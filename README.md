@@ -17,6 +17,12 @@ Configure individual packages with [stow](https://www.gnu.org/software/stow/):
 stow -t $HOME zsh
 ```
 
+tmux plugins are managed by [tpack](https://github.com/tmuxpack/tpack) (in the
+Brewfile). After stowing `tmux`, install them once:
+```bash
+tpack install
+```
+
 ## Claude Code
 
 Stow `claude` with `--no-folding` to avoid linking the rest of `~/.claude`:
