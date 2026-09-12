@@ -29,3 +29,22 @@
                 git rebase -i \"origin/$default\"; \
             }; f"
         s = status
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
+	autoSquash = true
+[fetch]
+	prune = true
+[diff]
+	algorithm = histogram
+[merge]
+	conflictStyle = zdiff3
+[rerere]
+	enabled = true
+[branch]
+	sort = -committerdate
