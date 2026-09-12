@@ -29,12 +29,14 @@ Stow `claude` with `--no-folding` to avoid linking the rest of `~/.claude`:
 stow --no-folding -t $HOME claude
 ```
 
-Add the status line to `~/.claude/settings.json` (plugins can't set it):
+Add this to `~/.claude/settings.json`:
 ```json
 {
   "statusLine": {
     "type": "command",
-    "command": "bash ~/.claude/statusline-command.sh"
-  }
+    "command": "bash ~/.claude/statusline-command.sh",
+    "hideVimModeIndicator": true
+  },
+  "theme": "custom:catppuccin-mocha"
 }
 ```
