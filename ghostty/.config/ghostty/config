@@ -34,3 +34,10 @@ window-title-font-family = "Monaspace Argon"
 # -----------------------------------------------------------------------------
 # Uses the high-resolution official Ghostty icon
 macos-icon = official
+
+# Clipboard and closing (tmux owns the sessions, so closing a surface risks nothing)
+copy-on-select = clipboard
+confirm-close-surface = false
+
+# Send Option as Alt so Option+Enter / Option+P work in Claude Code and Alt-C in fzf
+macos-option-as-alt = true
